@@ -305,9 +305,19 @@ a {
 }
 code.blockmotion, code.blocklooks, code.blocksound, code.blockpen, code.blockdata, code.blockevents, code.blockcontrol, code.blocksensing, code.blockoperators, code.blockmoreblocks {
     color: #fff;
+    white-space: nowrap;
 }
 code.blockevents {
     background: #D38117;
+}
+code.blockcontrol {
+    background: #E9AA00;
+}
+code.blockmotion {
+    background: #505FD7;
+}
+code.blocklooks {
+    background: #9B33D9;
 }
 code {
     background: #d7d7d7;
