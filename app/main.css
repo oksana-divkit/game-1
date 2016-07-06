@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+ol {
+	margin: 0 0 30px;
+}
+
 body {
 	margin: 0;
 	    font-size: 16px;
@@ -87,6 +91,9 @@ h1, article h2, .h1, h2, .h2, h3, .h3 {
     font-size: 70px;
     font-size: 4.375rem;
     line-height: normal;
+}
+.lesson h1 {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 .container {
     margin-right: auto;
@@ -201,6 +208,7 @@ p {
 .lesson-steps ul>li {
     list-style: none;
     position: relative;
+    cursor: pointer;
 }
 
 *:before, *:after {
@@ -306,6 +314,12 @@ a {
 code.blockmotion, code.blocklooks, code.blocksound, code.blockpen, code.blockdata, code.blockevents, code.blockcontrol, code.blocksensing, code.blockoperators, code.blockmoreblocks {
     color: #fff;
     white-space: nowrap;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+code.mark {
+    white-space: nowrap;
+    background: rgb(215, 215, 215);
 }
 code.blockevents {
     background: #D38117;
@@ -318,6 +332,15 @@ code.blockmotion {
 }
 code.blocklooks {
     background: #9B33D9;
+}
+code.blocksensing {
+    background: rgb(0, 163, 230);
+}
+code.blockoperators {
+    background: rgb(0, 193, 20);
+}
+code.blockdata {
+    background: rgb(255, 117, 0);
 }
 code {
     background: #d7d7d7;
