@@ -2,12 +2,11 @@
 <html lang="uk">
 <head>
 	<meta charset="utf-8" />
-	<title>Робот Балакун</title>
+	<title>Набір для малювання</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="shortcut icon" href="app/img/favicon.ico">
 
 	<link rel="stylesheet" href="app/main.css" />
 
@@ -18,294 +17,173 @@
 
 <div class="wrapper">
 
+
+	<header class="header">
+		<div class="level">Гра <span class="level__num">5</span></div>
+
+		<h1 class="game-name">Набір для малювання</h1>
+
 		<div class="logo">
 			<img src="app/img/logo.svg" />
 		</div>
+	</header>
 
+	<h4>Передмова:</h4>
 
-	<header class="lesson">
-  
-	    <div class="container">
-	      
+	<p>&nbsp;&nbsp;&nbsp;Цей проект передбачає створення програми для малювання. Ви зможете змінювати колір ліній, очищувати екран, робити штампи та багато іншого.</p>
 
-	    </div>
-	    <div class="container">
-	      <h1>Робот Балакун</h1>
-	      
-	        <div>
-	        
-	      </div>
-	    </div>
-	  </header>
+	<p><iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe> </p>
 
+	<h2 class="step-title"><span class="step-title__num">Крок 1:</span>  Створення олівця</h2>
 
-<section class=" pdf-background">
-	<div class="container">
-		<article>
-			<main class="lesson-steps center-block" role="main">
-				<div class="icon-sample pull-right">
-				</div>
-				<section id="introduction" class="level1 intro">
-					<h1>Передмова</h1>
-					<p>Ви навчитеся програмувати власного робота-співрозмовника!</p>
-					<div class="scratch-preview">
-						<p><iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe> </p>
-					</div>
-				</section>
-				<section id="step-1-sprites" class="level1 activity">
-					<h1>Крок 1: Ваш робот</h1>
-					<section id="activity-checklist" class="level2 check">
-						<h2>Завдання для виконання</h2>
-						<ul>
-							<li>
-								<p>Перед тим, як створити свого робота, потрібно придумати йому особистість.</p>
-								<ol>
-									<li>Як його звати?</li>
-									<li>Де він живе?</li>
-									<li>Чи він щасливий? Серйозний? Смішний? Сором'язливий? Привітний?</li>
-								</ol>
-							</li>
-							<li>
-								<p>Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор за посиланням <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a></p>
-							</li>
-							<li>
-								<p>Виберіть одного з цих персонажів, і додайте його до проекту:</p>
-								<figure>
-									<img src="app/img/chatbot-characters.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Виберіть фон, який пасуватиме до вашого робота. Він може бути таким, але ви можете вибрати будь-який інший:</p>
-								<figure>
-									<img src="app/img/chatbot-sprite.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-						</ul>
-					</section>
-					<section id="save-your-project" class="level2 save">
-						<h2>Збережіть свій проект</h2>
-					</section>
-				</section>
-				<section id="step-2-the-stage" class="level1 activity">
-					<h1>Крок 2: Балакучий робот</h1>
-					<p>Тепер, коли ваш робот має свою особистість, давайте запрограмуємо його для розмови.</p>
-					<section id="activity-checklist-1" class="level2 check">
-						<h2>Завдання для виконання</h2>
-						<ul>
-							<li class="">
-								<p>Натисніть на спрайт робота, та додайте цей код:</p>
-								<figure>
-									<img src="app/img/code1.png" alt="screenshot" data-pin-nopin="true">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Клацніть по роботу, щоб перевірити його. Коли він запитає ваше ім'я, надрукуйте його в поле в нижній частині сцени.</p>
-								<figure>
-									<img src="app/img/chatbot-text.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Ваш робот просто відповідає кожного разу <code class="mark">Яке гарне ім'я!</code>. Ви можете персоналізувати відповідь вашого робота, використовуючи відповідь користувача. Змініть код робота, щоб він виглядав наступним чином:</p>
-								<figure>
-									<img src="app/img/code2.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
+	<p>Ми розпочнемо із олівця, який малює, коли ним водять по сцені.</p>
 
-								<p>Щоб створити останній блок, потрібно спочатку потягнути зелений блок <code class="blockoperators">з'єднати</code>, і помістити його в блок <code class="blocklooks">говорити</code>.</p>
-								<figure>
-									<img src="app/img/chatbot-join.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-								<p>Після цього можна змінити текст <code class="mark">hello</code> на <code class="mark">Привіт</code>, і перетягнути блакитний блок <code class="blocksensing">відповідь</code> (з розділу "Датчики") на текст <code class="mark">world</code></p>
-								<figure>
-									<img src="app/img/chatbot-answer.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Протестуйте свою нову програму. Чи працює вона так, як ви очікували? Як ви можете вирішити проблеми, які побачили? (Підказка: спробуйте десь додати пробіл!)</p>
-							</li>
-							<li>
-								<p>Можливо, ви хочете зберегти ім'я користувача в змінній, щоб мати можливість використовувати його пізніше. Створіть нову змінну <code class="blockdata">ім'я</code>.</p>
-							</li>
-							<li>
-								<p>Інформація, яку ви ввели (тобто ваше ім'я), вже зберігається в спеціальній змінній <code class="blocksensing">відповідь</code>. Відкрийте вкладку "Датчики" і клацніть по сірому квадратику біля змінної "відповідь", так щоб з'явилась галочка. Тепер актуальне значення <code class="blocksensing">відповіді</code> має з'явитися у верхньому лівому кутку сцени.</p>
-							</li>
-							<li>
-								<p>Після того як ви створили нову змінну, переконайтеся, що код вашого робота виглядатиме ось так:</p>
-								<figure>
-									<img src="app/img/code3.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Якщо ви перевірите програму ще раз, ви помітите, що відповідь зберігається в змінній <code class="blockdata">ім'я</code> і відображається у верхньому лівому кутку сцени. Змінна <code class="blockdata">ім'я</code> тепер має містити те ж значення, що і змінна <code class="blocksensing">відповідь</code>.</p>
-								<figure>
-									<img src="app/img/chatbot-variable.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-								<p>Якщо ви не хочете бачити змінні на сцені, натисніть на галочку поруч із назвою змінної на владці "Скрипти", щоб приховати її.</p>
-							</li>
-						</ul>
-					</section>
-				</section>
+	<div class="tasks-title">Завдання для виконання</div>
 
-					<section id="save-your-project" class="level2 save">
-						<h2>Збережіть свій проект</h2>
-					</section>
+	<ol class="tasks-list">
+		<li>Створіть новий проект у Скретч. Видаліть спрайт кота, клікнувши правою кнопкою мишки і натиснувши Вилучити.</li>
+		<li>Додайте спрайт олiвця в ваш проект та трохи його зменшіть
+			<img class="screen" src="app/img/screen_2.png" />
+		</li>
+		<li>Клiкнiть на вкладку "Образи" та видалiть ‘pencil-b’
+			<img class="screen" src="app/img/screen_3.png" />
+		</li>
+		<li>Перейменуйте образ олівця на "синій олівець". Та використовуючи інструмент "Колір форми" перефарбуйте олівець в синій колір.
+			<img class="screen" src="app/img/screen_4.png" />
+		</li>
+		<li>Зробіть так, щоб олівець слідував за мишкою по сцені, використовуйте блоки команд
+		"завжди" (вкладка Керувати) та "переміститись у вказівник миші" (вкладка Рух).
+			<img class="screen" src="app/img/code_1.png" />
+		</li>
+		<li>Розташуйте центр зображення на кінчику олівця. Для цього оберіть кнопку "встановити центр образу" і розмістіть (обертаючи і перетягуючи) його так, щоб позначка центру зображення була на кінчику олівця.
+			<img class="screen" src="app/img/screen_5.png" />
+			<img class="screen" src="app/img/screen_6.png" />
+		</li>
+		<li>Ми будемо використовувати кнопку мишки, щоб керувати олівцем – коли мишка натиснута, то олівець малює. Це можна зробити за допомогою блоків "якщо то" та "мишку натиснуто?"
+			<img class="screen" src="app/img/code_2.png" />
+		</li>
+	</ol>
+	
+	<div class="test-project">
+		<h3 class="test-project__title">Протестуй свій проект</h3>
 
-				<section id="challenge-make-your-own-animation" class="level2 challenge">
-					<h2>Виклик: Більше запитань</h2>
-					<p>Запрограмуйте вашого робота Балакуна, так щоб він ставив й інші запитання. Чи можете ви записати нові відповіді в змінні?</p>
-					<figure>
-						<img src="app/img/chatbot-question.png" alt="screenshot"><figcaption>screenshot</figcaption>
-					</figure>
-				</section>
-
-				<section id="step-3-making-a-drum" class="level1 activity">
-					<h1>Крок 3: Прийняття рішень</h1>
-					<p>Ви можете запрограмувати робота так, щоб він на основі ваших відповідей сам вирішував, що йому робити.</p>
-					<section id="activity-checklist-2" class="level2 check">
-						<h2>Завдання для виконання</h2>
-						<ul>
-							<li>
-								<p>Давайте зробимо так, щоб робот ставив запитання, на яке можна відповісти <code class="mark">так</code> чи <code class="mark">ні</code>. Наприклад таке, як показано нижче, але якщо ви хочете, ви можете змінити запитання:</p>
-								<figure>
-									<img src="app/img/code4.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-								<p>Зверніть увагу, що тепер, коли ви зберегли ім'я користувача в змінній, ви можете використовувати його стільки, скільки хочете.</p>
-							</li>
-							<li>
-								<p>Для того, щоб протестувати цю програму правильно, потрібно перевірити її двічі - один раз ввівши відповідь <code class="mark">ні</code>, а вдруге набравши <code class="mark">так</code>. Ви повинні отримати відповідь, тільки <code class="blockcontrol">якщо</code> ваша відповідь була <code class="mark">так</code>.</p>
-							</li>
-							<li>
-								<p>Проблема з вашим роботом в тому, що він не дає відповіді, якщо користувач відповідає <code class="mark">ні</code>. Ви можете це виправити замінивши блок <code class="blockcontrol">якщо</code> на <code class="blockcontrol">якщо/інакше</code>, так що ваш код виглядатиме тепер так:</p>
-								<figure>
-									<img src="app/img/code5.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>При перевірці ваш коду, ви побачите, що зараз ви отримуєте відповідь відповівши <code class="mark">так</code> або <code class="mark">ні</code>. Ваш робот повинен відповісти <code class="mark">Приємно це чути!</code> коли ви відповідаєте <code class="mark">так</code>, але відповість <code class="mark">Ой, як шкода!</code>, якщо ви напишете щось інше, ніж <code class="mark">так</code> (<code class="blockcontrol">інакше</code> означає "в іншому випадку").</p>
-								<figure>
-									<img src="app/img/chatbot-else.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Ви можете помістити будь-який код всередині блоків <code class="blockcontrol">якщо</code> та <code class="blockcontrol">інакше</code>, а не лише код для відповідей робота. Наприклад, можна змінювати костюм робота для кожної з відповідей.</p>
-								<p>Якщо ви подивитесь на костюми вашого робота, ви побачите, що їх там більше, ніж один. (А навіть якщо їх немає, то ви завжди можете додати свої власні!)</p>
-								<figure>
-									<img src="app/img/chatbot-costumes.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-								<p>Ви можете використовувати ці образи як частину відповіді робота, додавши наступний код:</p>
-								<figure>
-									<img src="app/img/code6.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Перевірте вашу програму, ви повинні побачити, як обличчя вашого робота змінюється залежно від того, яку ви даєте відповідь.</p>
-								<figure>
-									<img src="app/img/chatbot-face.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-						</ul>
-					</section>
-				</section>
-
-				<section id="challenge-make-your-own-animation" class="level2 challenge">
-					<h2>Виклик: Більше рішень</h2>
-					<p>Запрограмуйте вашого робота Балакуна таким чином, щоб він задавав більше запитань з можливими відповідями <code class="mark">так</code> чи <code class="mark">ні</code>. Чи можете ви зробити так, щоб робот вам також відповідав?</p>
-					<figure>
-						<img src="app/img/chatbot-joke.png" alt="screenshot"><figcaption>screenshot</figcaption>
-					</figure>
-				</section>
-				<section id="step-4-making-a-singer" class="level1 activity new-page">
-					<h1>Крок 4: Зміна локації</h1>
-					<p>Також можна запрограмувати робота, щоб він перемістився на іншу локацію.</p>
-					<section id="activity-checklist-3" class="level2 check">
-						<h2>Завдання для виконання</h2>
-						<ul>
-							<li>
-								<p>Додайте ще одне тло до вашої сцени, наприклад "місяць".</p>
-								<figure>
-									<img src="app/img/chatbot-moon.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Тепер ви можете запрограмувати вашого робота, щоб він змінював локацію, додавши до нього цей код:</p>
-								<figure>
-									<img src="app/img/code7.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Ви також повинні переконатися, що ваш робот знаходиться зовні, коли ви починаєте говорити до нього. Додайте цей блок до верхньої частини скрипту робота:</p>
-								<figure>
-									<img src="app/img/chatbot-outside.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Перевірте вашу програму. Відповідайте <code class="mark">так</code>, коли вас запитують, чи хочете ви полетіти на місяць. Місцезнаходження робота має змінитися.</p>
-								<figure>
-									<img src="app/img/chatbot-backdrop.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Чи змінює ваш робот локацію, якщо ви відповідаєте <code class="mark">ні</code>? А якщо ви відповісте <code class="mark">я не впевнений</code>?</p>
-							</li>
-							<li>
-								<p>Ви також можете додати цей код до вашого блоку <code class="blockcontrol">якщо</code>, для того щоб ваш робот стрибав вгору і вниз 4 рази, якщо отримає відповідь <code class="mark">так</code>:</p>
-								<figure>
-									<img src="app/img/chatbot-loop.png" alt="screenshot">
-									<figcaption>screenshot</figcaption>
-								</figure>
-							</li>
-							<li>
-								<p>Перевірте ваш код ще раз. Чи підстрибує ваш робот вгору і вниз, якщо ви відповідаєте <code class="mark">так</code>?</p>
-							</li>
-						</ul>
-					</section>
-				</section>
-
-				<section id="challenge-make-your-own-animation" class="level2 challenge">
-					<h2>Виклик: Створи власного робота</h2>
-					<p>Використовуйте те, чому навчились, щоб завершити створення інтерактивного робота. Ось деякі ідеї:</p>
-					<figure>
-						<img src="app/img/chatbot-ideas.png" alt="screenshot"><figcaption>screenshot</figcaption>
-					</figure>
-					<p>Коли ви закінчите робота, попросіть ваших друзів поговорити з ним! Чи подобається їм ваш персонаж? Чи помітили вони будь-які проблеми?</p>
-				</section>
-
-				<a href="expert/">Гра для експертів</a>
-				
-				</section>
-			</main>
-		</article>
+		<p><b>Натисни на зелений прапорець.</b></p>
+		<p>Чи рухається олівець за мишкою? Що відбувається, якщо утримувати кнопку мишки натиснутою і
+рухати мишкою? Не турбуйтесь з приводу кольору олівця поки що.</p>
 	</div>
-</section>
+			<img class="screen" src="app/img/screen_7.png" />
+	
+
+
+	<h2 class="step-title"><span class="step-title__num">Крок 2:</span> Кольорові олівці</h2>
+	<p>Тепер давайте додамо більше кольорових олівців в наш проект</p>
+
+	<div class="tasks-title">Завдання для виконання</div>
+
+	<ol class="tasks-list">
+		<li>Продублюйте синій образ олівця</li>
+		<li>Новий образ назвіть "зелений олівець" та перефарбуйте його в зелений колір
+			<img class="screen" src="app/img/screen_8.png" />
+		</li>
+		<li>Створіть два нових об'єкти-квадратики, які ми будемо використовувати для вибору кольору олівця
+			<img class="screen" src="app/img/screen_9.png" /></li>
+		<li>Коли зелений квадратик натиснутий, він має оповіщати про зміну кольору на зелений
+			<img class="screen" src="app/img/code_3.png" />
+		</li>
+		<li>Тепер олівець може реагувати на це повідомлення
+			<img class="screen" src="app/img/code_4.png" />
+		</li>
+		<li>Повторіть ці дії для синього олівця</li>
+		<li>Коли гра тільки починається, нам потрібно очистити екран після попереднього запуску та вказати, яким кольором зробити олівець
+			<img class="screen" src="app/img/code_5.png" />
+		</li>
+		<li>Протестуйте свій проект. Чи вдається вам перемикатись між зеленим та синім кольором?
+			<img class="screen" src="app/img/screen_10.png" />
+		</li>
+	</ol>
+
+
+
+	<h2 class="step-title"><span class="step-title__num">Крок 3:</span> Робимо помилки</h2>
+	
+	<p>Іноді трапляються помилки, так що давайте додамо кнопки "Очистити" і "Ластик"" до нашого проекту!</p>
+
+	<div class="tasks-title">Завдання для виконання</div>
+
+	<ol class="tasks-list">
+		<li>Давайте спочатку додамо кнопку для очистки сцени. Щоб зробити це, додайте 'X' літеру-спрайт та перефарбуйте її в червоний
+			<img class="screen" src="app/img/screen_11.png" />
+		</li>
+		<li>Додайте до неї скрипт, який буде повністю стирати все намальоване до цього
+			<img class="screen" src="app/img/code_6.png" />
+		</li>
+		<li>Також можна створити ластик. Додайте до олівця новий образ з папки "Ресурси" - ластик (eraser.png). Перейменуйте цей костюм на "ластик".
+			<img class="screen" src="app/img/screen_12.png" />
+		</li>
+		<li>А на сцену помістіть ще один спрайт з таким же малюнком
+			<img class="screen" src="app/img/screen_13.png" />
+		</li>
+		<li>Після цього можна до ластика додати скрипт, що якщо він натиснутий, сповіщати про це повідомоенням
+			<img class="screen" src="app/img/code_7.png" />
+		</li>
+		<li>Коли олівець отримає це повідомлення, він змінить свій костюм на ластик і буде малювати білим кольором
+			<img class="screen" src="app/img/code_8.png" />
+		</li>
+		<li>Протестуй свій проект. Перевір, чи працюють кнопки очистки та стирання.
+			<img class="screen" src="app/img/screen_14.png" />
+		</li>
+		<li>Але є одна проблема. Зараз можна малювати де завгодно, навіть за іконками вибору кольору
+			<img class="screen" src="app/img/screen_15.png" />
+
+			Щоб полагодити це, потрібно вказати олівцю, що він може малювати, тільки якщо y-координата курсора вище за -110. Змініть скрипт на наступний:
+			<img class="screen" src="app/img/code_9.png" />
+		</li>
+	</ol>
+
+
+
+	<h2 class="step-title"><span class="step-title__num">Крок 4:</span> Змінюємо розмір олівця</h2>
+	
+	<p>Додамо користувачеві можливість малювати, використовуючи різні розміри олівця.</p>
+
+	<div class="tasks-title">Завдання для виконання</div>
+
+	<ol class="tasks-list">
+		<li>По-перше, додамо нову змінну з ім'ям 'ширина'.</li>
+		<li>Тепер зробимо так, щоб олівець завжди встановлюва ту ширину, яка вказана в цій змінній
+			<img class="screen" src="app/img/code_10.png" />
+		</li>
+		<li>Число в змінній можна змінювати на сцені, а щоб це було зручніше робити, змініть її вигляд на "слайдер"
+			<img class="screen" src="app/img/screen_16.png" />
+		</li>
+		<li>Протестуй свій проект. Перевір, чи змінюється товщина олівця.
+			<img class="screen" src="app/img/screen_17.png" />
+		</li>
+	</ol>
+	
+	
+	
+	<h4>Молодець! Створення основної гри завершено.</h4>
+
+	<p>Однак є ще деякі речі, які можна використати у грі. Спробуй виконати ці додаткові завдання.</p>
+	
+
+	<h2 class="step-title">Бонусне завдання: Більше кольорів</h2>
+
+	<p>Спробуй додати ще червоний, жовтий та чорний кольори. Тепер ти зможеш малювати повноцінні картини.</p>
+	<img class="screen" src="app/img/screen_18.png" />
+	
+
+	<h2 class="step-title">Бонусне завдання 2: Шорткоди</h2>
+
+	<p>Чи можеш ти створити шорткоди для свого проекту? Шорткоди - це привязка якихось дій до натискання клавіш. Наприклад, якщо я натисну клавішу "з" - олівець стане зеленим, а якщо "с" - синім.</p>
+	
+
+	<h4>Молодець! Проект завершено, тепер можна насолоджуватись грою!</h4>
+
 	
 </div><!-- .wrapper -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script>
-$(function() {
-	$('.lesson-steps li').click(function() {
-		$(this).toggleClass('activity-done');
-	});
-});
-</script>
 
 </body>
 </html>
