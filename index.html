@@ -2,11 +2,12 @@
 <html lang="uk">
 <head>
 	<meta charset="utf-8" />
-	<title>Набір для малювання</title>
+	<title>Перегони на човнах</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
 
 	<link rel="stylesheet" href="app/main.css" />
 
@@ -17,175 +18,339 @@
 
 <div class="wrapper">
 
-
-	<header class="header">
-		<div class="level">Гра <span class="level__num">5</span></div>
-
-		<h1 class="game-name">Набір для малювання</h1>
-
 		<div class="logo">
 			<img src="app/img/logo.svg" />
 		</div>
-	</header>
 
-	<h4>Передмова:</h4>
 
-	<p>&nbsp;&nbsp;&nbsp;Цей проект передбачає створення програми для малювання. Ви зможете змінювати колір ліній, очищувати екран, робити штампи та багато іншого.</p>
+	<header class="lesson">
+  
+	    <div class="container">
+	      
 
-	<p><iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63473366/?autostart=false" frameborder="0"></iframe> </p>
+	    </div>
+	    <div class="container">
+	      <h1>Перегони на човнах</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
 
-	<a href="resources.zip">Ресурси</a>
 
-	<h2 class="step-title"><span class="step-title__num">Крок 1:</span>  Створення олівця</h2>
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>Ви дізнаєтесь, як зробити гру, в якій треба буде використовувати мишку, щоб перемістити човен в напрямку пустельного острову.</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Планування гри</h1>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. </p>
+							</li>
+							<li>
+								<p>Натисніть на тло (фон) і заплануйте рівень. Ви повинні додати:</p>
 
-	<p>Ми розпочнемо із олівця, який малює, коли ним водять по сцені.</p>
+								<ol>
+									<li>Дерев'яний лабіринт, який човен повинен оминути;</li>
+									<li>Пустельний острів, до якого човен повинен дістатися.</li>
+								</ol>
 
-	<div class="tasks-title">Завдання для виконання</div>
+								<p>Ось так може виглядати гра:</p>
+								<figure>
+									<img src="app/img/boat-bg.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
 
-	<ol class="tasks-list">
-		<li>Створіть новий проект у Скретч. Видаліть спрайт кота, клікнувши правою кнопкою мишки і натиснувши Вилучити.</li>
-		<li>Додайте спрайт олiвця в ваш проект та трохи його зменшіть
-			<img class="screen" src="app/img/screen_2.png" />
-		</li>
-		<li>Клiкнiть на вкладку "Образи" та видалiть ‘pencil-b’
-			<img class="screen" src="app/img/screen_3.png" />
-		</li>
-		<li>Перейменуйте образ олівця на "синій олівець". Та використовуючи інструмент "Колір форми" перефарбуйте олівець в синій колір.
-			<img class="screen" src="app/img/screen_4.png" />
-		</li>
-		<li>Зробіть так, щоб олівець слідував за мишкою по сцені, використовуйте блоки команд
-		"завжди" (вкладка Керувати) та "переміститись у вказівник миші" (вкладка Рух).
-			<img class="screen" src="app/img/code_1.png" />
-		</li>
-		<li>Розташуйте центр зображення на кінчику олівця. Для цього оберіть кнопку "встановити центр образу" і розмістіть (обертаючи і перетягуючи) його так, щоб позначка центру зображення була на кінчику олівця.
-			<img class="screen" src="app/img/screen_5.png" />
-			<img class="screen" src="app/img/screen_6.png" />
-		</li>
-		<li>Ми будемо використовувати кнопку мишки, щоб керувати олівцем – коли мишка натиснута, то олівець малює. Це можна зробити за допомогою блоків "якщо то" та "мишку натиснуто?"
-			<img class="screen" src="app/img/code_2.png" />
-		</li>
-	</ol>
-	
-	<div class="test-project">
-		<h3 class="test-project__title">Протестуй свій проект</h3>
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Управління човном</h1>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li class="">
+								<p>Натисніть на кнопку "Завантажити спрайт з файлу" і додайте малюнок "boat.png". Вам потрібно зменшити спрайт і помістити його у початкове положення.</p>
+								<figure>
+									<img src="app/img/boat.png" alt="screenshot" data-pin-nopin="true">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<figure>
+									<img src="app/img/boat-boat.png" alt="screenshot" data-pin-nopin="true">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Якщо хочете, можете намалювати свій власний човен!</p>
+							</li>
+							<li>
+								<p>Ви будете керувати човном за допомогою миші. Додайте наступний код до свого човна:</p>
+								<figure>
+									<img src="app/img/code1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Протестуйте свій човен, натиснувши на значок із зеленим прапорцем і переміщаючи мишку. Чи пливе човен за мишкою?</p>
+								<figure>
+									<img src="app/img/boat-mouse.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Що відбувається, коли човен досягає вказівника миші?</p>
+								<p>Щоб це зупинити, потрібно додати блок <code class="blockcontrol">якщо</code> щоб човен рухався тільки тоді, коли він знаходиться на відстані 5 пікселів від вказівника миші.</p>
+								<figure>
+									<img src="app/img/code2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Протестуйте човен знову і перевірте чи проблема вирішилась.</p>
+							</li>
+						</ul>
+					</section>
+				</section>
 
-		<p><b>Натисни на зелений прапорець.</b></p>
-		<p>Чи рухається олівець за мишкою? Що відбувається, якщо утримувати кнопку мишки натиснутою і
-рухати мишкою? Не турбуйтесь з приводу кольору олівця поки що.</p>
+				<section id="step-3-making-a-drum" class="level1 activity">
+					<h1>Крок 3: Аварія!</h1>
+					<p>Човен може пропливати через дерев'яні бар'єри! Треба це поправити.</p>
+					<section id="activity-checklist-2" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Вам потрібно 2 образи для човна, один звичайний, інший - для випадків, коли човен виходить з ладу. Образи потрібно назвати "звичайний" і "пошкоджений".</p>
+							</li>
+							<li>
+								<p>Натисніть на "пошкоджений" образ і скористайтесь інструментом "Вибрати", щоб захопити, переміщати і обертати частинки човна. Зробіть так, щоб човен мав вигляд розбитого.</p>
+								<figure>
+									<img src="app/img/boat-hit-costume.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до човна, всередині блоку <code class="blockcontrol">завжди</code>, щоб він розбивався, коли торкається будь-якого коричневого дерев'яного уламку:</p>
+								<figure>
+									<img src="app/img/code3.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Слід також потурбуватись, щоб човен завжди починав подорож у "звичайному" вигляді.</p>
+							</li>
+							<li>
+								<p>Тепер, коли ви спробуєте плисти через дерев'яні бар'єри, ви зможете побачити, що човен розбивається і рухається назад до початку.</p>
+								<figure>
+									<img src="app/img/boat-crash.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Перемога!</h2>
+					<p>Чи можете ви додати ще одне судження <code class="blockcontrol">if</code> до коду човна, щоб гравець вигравав тоді, коли дістається до острову?</p>
+					<p>Коли човен досягає жовтого безлюдного острову, з'являється напис "Ураа!"" і гра припиняється. Ви можете використовувати наступний код:</p>
+					<figure>
+						<img src="app/img/code4.png" alt="screenshot"><figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Звукові ефекти</h2>
+					<p>Ви можете додати до гри звукові ефекти, коли човен розбивається або досягає острова в кінці гри.</p>
+					<p>Можна навіть додати фонову музику.</p>
+				</section>
+				<section id="step-4-making-a-singer" class="level1 activity new-page">
+					<h1>Крок 4: Обмеження часу</h1>
+					<p>Додаймо до гри таймер, щоб гравець спробував дістатися безлюдного острову якомога швидше.</p>
+					<section id="activity-checklist-3" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Додайте нову змінну з ім'ям <code class="blockdata">час</code>. Також можна змінити відображення нової змінної, клікаючи по ній на сцені.</p>
+								<figure>
+									<img src="app/img/boat-variable.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до <b>сцени</b>, щоб таймер лічив час доти, доки човен не дістанеться острову:</p>
+								<figure>
+									<img src="app/img/code5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Готово! Протестуйте вашу гру і перевірте, як швидко ви можете дістатися безлюдного острова!</p>
+								<figure>
+									<img src="app/img/boat-win.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section id="step-4-making-a-singer" class="level1 activity new-page">
+					<h1>Крок 5: Перешкоди і бонуси</h1>
+					<p>Ця гра <i>занадто</i> проста - давайте зробимо її більш цікавою.</p>
+					<section id="activity-checklist-3" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Спочатку додамо деякі активні елементи, які пришвидшать човен. Відредагуйте фонове зображення і додайте кілька білих стрілок.</p>
+								<figure>
+									<img src="app/img/boat-boost.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер ви можете додати код до циклу вашого човна <code class="blockcontrol">завжди</code>, щоб при пропливанні над білими стрілками він переміщався на 2 <b>додаткові</b> кроки.</p>
+								<figure>
+									<img src="app/img/code6.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Можна також додати рухомі ворота, яких човен повинен уникнути. Додайте новий графічний об'єкт з ім'ям "ворота", який виглядає наступним чином:</p>
+								<figure>
+									<img src="app/img/boat-gate.png" height="364" width="481" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Переконайтеся, що колір воріт збігається з кольором інших дерев'яних перешкод.</p>
+							</li>
+							<li>
+								<p>Встановіть центр на спрайті воріт.</p>
+								<figure>
+									<img src="app/img/boat-center.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте код, щоб ворота <code class="blockcontrol">завжди</code> оберталися.</p>
+							</li>
+							<li>
+								<p>Протестуйте гру. Тепер в грі з'явилися ворота, які обертаються і яких треба уникати.</p>
+								<figure>
+									<img src="app/img/boat-gate-test.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Більше перешкод!</h2>
+					<p>Чи можна додати більше перешкод для вашої гри? Нижче наводяться кілька ідей:</p>
+					<ol>
+						<li>
+							<p>До фонового зображення можна додати зелені ділянки болота, які уповільнюють швидкість човна, коли він на них натрапляє. Для цього використовується блок <code class="blockcontrol">чекати</code>:</p>
+								<figure>
+									<img src="app/img/code7.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<figure>
+									<img src="app/img/boat-algae.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+						<li>
+							<p>Ще можна додати рухомі об'єкти, такі як колода або акула!</p>
+								<figure>
+									<img src="app/img/boat-obstacles.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							<p>Ці блоки можуть вам допомогти:</p>
+								<figure>
+									<img src="app/img/code8.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							<p>Якщо ваш новий об'єкт не коричневого кольору, вам потрібно буде додати до човна ще й такий код:</p>
+								<figure>
+									<img src="app/img/code9.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+					</ol>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Більше човнів!</h2>
+					<p>Чи можна перетворити вашу гру в гонку між 2 гравцями?</p>
+					<ol>
+						<li>
+							<p>Продублюйте спрайт човна, і змініть його ім'я на "Гравець 2", також змініть його колір.</p>
+								<figure>
+									<img src="app/img/boat-p2.png" height="248" width="387" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+						<li>
+							<p>Змініть початкову позицію для Гравця 2, змінивши цей код:</p>
+								<figure>
+									<img src="app/img/code10.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+						<li>
+							<p>Видаліть код, що використовується для керування човном мишкою:</p>
+								<figure>
+									<img src="app/img/code11.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+					</ol>
+
+					<p>...і замініть його на код, який буде керувати човном за допомогою клавіш зі стрілками.</p>
+					<p>Для руху вперед використувуйте наступний код:</p>
+								<figure>
+									<img src="app/img/code12.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+					<p>Аналогічно для повороту човна при натисканні лівої і правої клавіші стрілок використовуйте код <code class="blockmotion">поворот</code>.</p>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Більше рівнів!</h2>
+					<p>Чи можете ви створити додаткові фонові зображення, а також дозволити гравцеві вибирати рівні?</p>
+
+
+					<figure>
+						<img src="app/img/code13.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+				
+				</section>
+			</main>
+		</article>
 	</div>
-			<img class="screen" src="app/img/screen_7.png" />
-	
-
-
-	<h2 class="step-title"><span class="step-title__num">Крок 2:</span> Кольорові олівці</h2>
-	<p>Тепер давайте додамо більше кольорових олівців в наш проект</p>
-
-	<div class="tasks-title">Завдання для виконання</div>
-
-	<ol class="tasks-list">
-		<li>Продублюйте синій образ олівця</li>
-		<li>Новий образ назвіть "зелений олівець" та перефарбуйте його в зелений колір
-			<img class="screen" src="app/img/screen_8.png" />
-		</li>
-		<li>Створіть два нових об'єкти-квадратики, які ми будемо використовувати для вибору кольору олівця
-			<img class="screen" src="app/img/screen_9.png" /></li>
-		<li>Коли зелений квадратик натиснутий, він має оповіщати про зміну кольору на зелений
-			<img class="screen" src="app/img/code_3.png" />
-		</li>
-		<li>Тепер олівець може реагувати на це повідомлення
-			<img class="screen" src="app/img/code_4.png" />
-		</li>
-		<li>Повторіть ці дії для синього олівця</li>
-		<li>Коли гра тільки починається, нам потрібно очистити екран після попереднього запуску та вказати, яким кольором зробити олівець
-			<img class="screen" src="app/img/code_5.png" />
-		</li>
-		<li>Протестуйте свій проект. Чи вдається вам перемикатись між зеленим та синім кольором?
-			<img class="screen" src="app/img/screen_10.png" />
-		</li>
-	</ol>
-
-
-
-	<h2 class="step-title"><span class="step-title__num">Крок 3:</span> Робимо помилки</h2>
-	
-	<p>Іноді трапляються помилки, так що давайте додамо кнопки "Очистити" і "Ластик"" до нашого проекту!</p>
-
-	<div class="tasks-title">Завдання для виконання</div>
-
-	<ol class="tasks-list">
-		<li>Давайте спочатку додамо кнопку для очистки сцени. Щоб зробити це, додайте 'X' літеру-спрайт та перефарбуйте її в червоний
-			<img class="screen" src="app/img/screen_11.png" />
-		</li>
-		<li>Додайте до неї скрипт, який буде повністю стирати все намальоване до цього
-			<img class="screen" src="app/img/code_6.png" />
-		</li>
-		<li>Також можна створити ластик. Додайте до олівця новий образ з папки "Ресурси" - ластик (eraser.png). Перейменуйте цей костюм на "ластик".
-			<img class="screen" src="app/img/screen_12.png" />
-		</li>
-		<li>А на сцену помістіть ще один спрайт з таким же малюнком
-			<img class="screen" src="app/img/screen_13.png" />
-		</li>
-		<li>Після цього можна до ластика додати скрипт, що якщо він натиснутий, сповіщати про це повідомоенням
-			<img class="screen" src="app/img/code_7.png" />
-		</li>
-		<li>Коли олівець отримає це повідомлення, він змінить свій костюм на ластик і буде малювати білим кольором
-			<img class="screen" src="app/img/code_8.png" />
-		</li>
-		<li>Протестуй свій проект. Перевір, чи працюють кнопки очистки та стирання.
-			<img class="screen" src="app/img/screen_14.png" />
-		</li>
-		<li>Але є одна проблема. Зараз можна малювати де завгодно, навіть за іконками вибору кольору
-			<img class="screen" src="app/img/screen_15.png" />
-
-			Щоб полагодити це, потрібно вказати олівцю, що він може малювати, тільки якщо y-координата курсора вище за -110. Змініть скрипт на наступний:
-			<img class="screen" src="app/img/code_9.png" />
-		</li>
-	</ol>
-
-
-
-	<h2 class="step-title"><span class="step-title__num">Крок 4:</span> Змінюємо розмір олівця</h2>
-	
-	<p>Додамо користувачеві можливість малювати, використовуючи різні розміри олівця.</p>
-
-	<div class="tasks-title">Завдання для виконання</div>
-
-	<ol class="tasks-list">
-		<li>По-перше, додамо нову змінну з ім'ям 'ширина'.</li>
-		<li>Тепер зробимо так, щоб олівець завжди встановлюва ту ширину, яка вказана в цій змінній
-			<img class="screen" src="app/img/code_10.png" />
-		</li>
-		<li>Число в змінній можна змінювати на сцені, а щоб це було зручніше робити, змініть її вигляд на "слайдер"
-			<img class="screen" src="app/img/screen_16.png" />
-		</li>
-		<li>Протестуй свій проект. Перевір, чи змінюється товщина олівця.
-			<img class="screen" src="app/img/screen_17.png" />
-		</li>
-	</ol>
-	
-	
-	
-	<h4>Молодець! Створення основної гри завершено.</h4>
-
-	<p>Однак є ще деякі речі, які можна використати у грі. Спробуй виконати ці додаткові завдання.</p>
-	
-
-	<h2 class="step-title">Бонусне завдання: Більше кольорів</h2>
-
-	<p>Спробуй додати ще червоний, жовтий та чорний кольори. Тепер ти зможеш малювати повноцінні картини.</p>
-	<img class="screen" src="app/img/screen_18.png" />
-	
-
-	<h2 class="step-title">Бонусне завдання 2: Шорткоди</h2>
-
-	<p>Чи можеш ти створити шорткоди для свого проекту? Шорткоди - це привязка якихось дій до натискання клавіш. Наприклад, якщо я натисну клавішу "з" - олівець стане зеленим, а якщо "с" - синім.</p>
-	
-
-	<h4>Молодець! Проект завершено, тепер можна насолоджуватись грою!</h4>
-
+</section>
 	
 </div><!-- .wrapper -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
 
 </body>
 </html>
