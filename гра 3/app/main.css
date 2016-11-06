@@ -1,0 +1,120 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 910px;
+	padding: 60px 85px;
+	font: 23px/1.2 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #333;
+}
+
+.header {
+	margin: 0 0 30px;
+	padding: 48px 200px 47px 165px;
+	position: relative;
+	background: #b9e5fa;
+}
+
+.level {
+	position: absolute;
+	top: -11px;
+	left: 22px;
+	width: 128px;
+	height: 160px;
+	padding: 19px 0 0;
+	background: #3477d1;
+	text-align: center;
+	color: #fff;
+	border-radius: 22px;
+	font: 32px/1 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.level__num {
+	display: block;
+	font-size: 96px;
+}
+
+.game-name {
+	font-size: 37px;
+}
+
+.logo {
+	width: 178px;
+	position: absolute;
+	top: 11px;
+	right: 15px;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+h4 {
+	margin: 0 0 10px;
+	font-size: 34px;
+}
+
+p {
+	margin: 0 0 18px;
+}
+
+.screen {
+	margin: 20px auto;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.step-title {
+	color: #fff;
+	font-size: 34px;
+	background: #3477d1;
+	border-radius: 6px;
+	padding: 11px 26px 12px;
+	margin: 62px 0 15px;
+}
+
+.step-title__num {
+	color: #b9e5fa;
+}
+
+.tasks-title {
+	font-size: 29px;
+	color: #f5a200;
+	font-weight: bold;
+	margin: 0 0 30px;
+	min-height: 42px;
+	padding: 4px 0 0 55px;
+	background: url(img/check-orange.png) no-repeat;
+}
+
+.tasks-list {
+	font-size: 24px;
+	margin: 0 0 0 50px;
+	list-style-position: outside;
+}
+
+.tasks-list li {
+	margin: 0 0 25px;
+}
+
+.test-project {
+	border-radius: 7px;
+	margin: 20px 0 50px;
+	padding: 15px 25px;
+	border: 1px solid #349946;
+	background: #ebf5ed;
+}
+
+.test-project__title {
+	background: url(img/green-flag.png) no-repeat left 6px;
+	color: #349946;
+	margin: 0 0 25px;
+	font-size: 30px;
+	min-height: 33px;
+	padding: 0 0 0 35px;
+}

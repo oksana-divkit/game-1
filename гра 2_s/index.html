@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Заблукалий у космосі</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Заблукалий у космосі</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>У цьому проекті ви навчитесь програмувати власні анімації!</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26818098/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Анімація космічного корабля</h1>
+					<p>Давайте створимо космічний корабель, який прямуватиме до Землі!</p>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. Онлайн Скретч-редактор за посиланням <a href="http://jumpto.cc/scratch-new" target="_blank">jumpto.cc/scratch-new</a></p>
+							</li>
+							<li>
+								<p>Додайте до вашої сцени спрайти "Космічний корабель" і "Земля". Також слід встановити тло «Зірки». Ось, як сцена виглядатиме:</p>
+								<figure>
+									<img src="app/img/space-sprites.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Натисніть на новий спрайт космічного корабля, і натисніть на вкладку "Образи".</p>
+								<figure>
+									<img src="app/img/space-costume.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Виберіть зображення за допомогою інструмента-стрілки. Потім натисніть на круговий маркер повороту і повертайте зображення, поки воно не опиниться на правильному боці.</p>
+								<figure>
+									<img src="app/img/space-rotate.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до вашого космічного корабля:</p>
+								<figure>
+									<img src="app/img/space-animate.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Змініть числа у блоках коду, так щоб код був точно такий же, як на верхньому зображенні.</p>
+							</li>
+							<li>
+								<p>Якщо ви запустите код, то побачите як космічний корабель говорить, вмикається і рухається до центру сцени.</p>
+								<figure>
+									<img src="app/img/space-animate-stage.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Центр сцени має координати <code class="blockmotion">x:(0) y:(0)</code>. Позиція <code class="blockmotion">x:(-150) y:(-150)</code> відноситься до нижньої частини сцени з лівої сторони, а позиція <code class="blockmotion">x:(150) y:(150)</code> — до верхньої правої.</p>
+								<figure>
+									<img src="app/img/space-xy.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Якщо вам потрібно дізнатись координати якоїсь позиції на сцені, перемістіть вказівник миші на місце, яке вас цікавить і запишіть координати, які з'являться під сценою.</p>
+								<figure>
+									<img src="app/img/space-coordinates.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Перевірте вашу анімацію, натиснувши на зелений прапорець якраз над сценою.</p>
+								<figure>
+									<img src="app/img/space-flag.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+					<section id="challenge-improving-your-animation" class="level2 challenge">
+						<h2>Виклик: Вдосконалюємо анімацію</h2>
+						<p>Чи можете ви змінити цифри в скрипті анімації, так щоб: <br />+ корабель рухався поки не доторкнеться Землі? <br />+ корабель повільніше рухався до Землі?</p>
+						<p>Потрібно буде змінити цифри у цьому блоці:</p>
+						
+						<figure>
+							<img src="app/img/glide.png" alt="screenshot">
+							<figcaption>screenshot</figcaption>
+						</figure>
+					</section>
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+				</section>
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Анімація з використанням циклів</h1>
+					<p>Ще один спосіб анімації корабля — вказати йому рухатися потрошку, але багато разів поспіль.</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li class="">
+								<p>Видаліть з вашого коду блок <code class="blockmotion">ковзати</code>, натиснувши на блоці правою кнопкою, а потім на "вилучити". Код можна також видалити, перетягнувши його з області скриптів назад до області блоків коду.</p>
+								<figure>
+									<img src="app/img/space-delete-glide.png" alt="screenshot" data-pin-nopin="true">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Після того як ви видалили код, замініть його на ось цей:</p>
+								<figure>
+									<img src="app/img/space-loop.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Блок <code class="blockcontrol">повторити</code> використовується, щоб повторювати щось багато разів; таке повторення називається <b>цикл</b></p>
+							</li>
+							<li>
+								<p>Якщо ви клацнете на прапорець, щоб спробувати цей новий код, ви побачите, що він робить майже те ж саме, що й раніше.</p>
+							</li>
+							<li>
+								<p>Але ми можемо додати в цикл ще більше цікавих блоків. Додайте блок <code class="blocklooks">змінити ефект колір на 25</code> (у розділі "Вигляд"), щоб раз за разом змінювати колір космічного корабля, поки він летітиме:</p>
+								<figure>
+									<img src="app/img/space-colour.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Натисніть на прапорець, щоб побачити нову анімацію.</p>
+								<figure>
+									<img src="app/img/space-colour.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Також можна потроху зменшувати космічний корабель, поки він летить до Землі.</p>
+								<figure>
+									<img src="app/img/space-size.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Перевірте вашу анімацію. Що станеться, якщо ви клацнете на прапорець вдруге? Чи злітає космічний корабель з потрібним розміром? Ви можете використати цей блок, щоб виправити вашу анімацію:</p>
+								<figure>
+									<img src="app/img/size.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+				<section id="step-3-making-a-drum" class="level1 activity">
+					<h1>Крок 3: Мавпа в невагомості</h1>
+					<p>Давайте додамо до анімації мавпу, яка загубилась у космосі!</p>
+					<section id="activity-checklist-2" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Спочатку додайте спрайт мавпи з бібліотеки.</p>
+								<figure>
+									<img src="app/img/space-monkey.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Якщо ви натиснете на новий спрайт мавпи, а потім на вкладку "Образи", то ви зможете відредагувати вигляд мавпи. Виберіть інструмент "Еліпс" і намалюйте білий космічний шолом навколо її голови.</p>
+								<figure>
+									<img src="app/img/space-monkey-edit.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер натисніть "Скрипти" і додайте цей код до мавпи, завдяки якому вона буде повільно обертатися по колу:</p>
+								<figure>
+									<img src="app/img/turn.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Блок <code class="blockcontrol">завжди</code> — це ще один цикл, але цей ніколи не зупиняється.</p>
+							</li>
+							<li>
+								<p>Натисніть на прапорець для перевірки вашої мавпи. Щоб зупинити анімацію, потрібно натиснути на кнопку зупинки (червоний кружечок біля прапорця).</p>
+								<figure>
+									<img src="app/img/space-monkey-loop.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section id="step-4-making-a-singer" class="level1 activity new-page">
+					<h1>Крок 4: Блукаючі астероїди</h1>
+					<p>Давайте додамо до вашої анімації блукаючий астероїд.</p>
+					<section id="activity-checklist-3" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Додайте спрайт "астероїд" до вашої анімації.</p>
+								<figure>
+									<img src="app/img/space-rock-sprite.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до вашого астероїду, щоб він відбивався від країв сцени:</p>
+								<figure>
+									<img src="app/img/bounce.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Клацніть на прапорець для перевірки вашого астероїда. Чи він відбивається від меж сцени?</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section id="step-4-making-a-singer" class="level1 activity new-page">
+					<h1>Крок 5: Сяючі зірки</h1>
+					<p>Давайте об'єднаємо декілька циклів, щоб створити сяючу зірку.</p>
+					<section id="activity-checklist-3" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Додайте спрайт "зірка" до вашої анімації.</p>
+								<figure>
+									<img src="app/img/space-star-sprite.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до зірки:</p>
+								<figure>
+									<img src="app/img/space-star.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Натисніть на прапорець, щоб перевірити цю анімацію. Що робить цей код? Спочатку зірка збільшується у 20 разів, а потім зменшується в 20 разів, повертаючись до початкового розміру. Ці 2 цикли знаходяться всередині циклу <code class="blockcontrol">завжди</code>, так що анімація постійно повторюється.</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Створюємо свою власну анімацію</h2>
+					<p>Щоб почати новий проект, зупиніть космічну анімацію і натисніть на "Файл", потім натисніть на "Новий".</p>
+					<p>Використайте нові знання з цього проекту, щоб створити власну анімацію. Це може бути все, що вам заманеться, але анімація має відповідати параметрам. Ось кілька прикладів:</p>
+					<figure>
+						<img src="app/img/space-egs.png" alt="screenshot"><figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+				
+				</section>
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>

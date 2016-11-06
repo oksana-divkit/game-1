@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Перегони на човнах</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Перегони на човнах</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>Ви дізнаєтесь, як зробити гру, в якій треба буде використовувати мишку, щоб перемістити човен в напрямку пустельного острову.</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Планування гри</h1>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим. </p>
+							</li>
+							<li>
+								<p>Натисніть на тло (фон) і заплануйте рівень. Ви повинні додати:</p>
+
+								<ol>
+									<li>Дерев'яний лабіринт, який човен повинен оминути;</li>
+									<li>Пустельний острів, до якого човен повинен дістатися.</li>
+								</ol>
+
+								<p>Ось так може виглядати гра:</p>
+								<figure>
+									<img src="app/img/boat-bg.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Управління човном</h1>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li class="">
+								<p>Натисніть на кнопку "Завантажити спрайт з файлу" і додайте малюнок "boat.png". Вам потрібно зменшити спрайт і помістити його у початкове положення.</p>
+								<figure>
+									<img src="app/img/boat.png" alt="screenshot" data-pin-nopin="true">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<figure>
+									<img src="app/img/boat-boat.png" alt="screenshot" data-pin-nopin="true">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Якщо хочете, можете намалювати свій власний човен!</p>
+							</li>
+							<li>
+								<p>Ви будете керувати човном за допомогою миші. Додайте наступний код до свого човна:</p>
+								<figure>
+									<img src="app/img/code1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Протестуйте свій човен, натиснувши на значок із зеленим прапорцем і переміщаючи мишку. Чи пливе човен за мишкою?</p>
+								<figure>
+									<img src="app/img/boat-mouse.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Що відбувається, коли човен досягає вказівника миші?</p>
+								<p>Щоб це зупинити, потрібно додати блок <code class="blockcontrol">якщо</code> щоб човен рухався тільки тоді, коли він знаходиться на відстані 5 пікселів від вказівника миші.</p>
+								<figure>
+									<img src="app/img/code2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Протестуйте човен знову і перевірте чи проблема вирішилась.</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="step-3-making-a-drum" class="level1 activity">
+					<h1>Крок 3: Аварія!</h1>
+					<p>Човен може пропливати через дерев'яні бар'єри! Треба це поправити.</p>
+					<section id="activity-checklist-2" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Вам потрібно 2 образи для човна, один звичайний, інший - для випадків, коли човен виходить з ладу. Образи потрібно назвати "звичайний" і "пошкоджений".</p>
+							</li>
+							<li>
+								<p>Натисніть на "пошкоджений" образ і скористайтесь інструментом "Вибрати", щоб захопити, переміщати і обертати частинки човна. Зробіть так, щоб човен мав вигляд розбитого.</p>
+								<figure>
+									<img src="app/img/boat-hit-costume.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до човна, всередині блоку <code class="blockcontrol">завжди</code>, щоб він розбивався, коли торкається будь-якого коричневого дерев'яного уламку:</p>
+								<figure>
+									<img src="app/img/code3.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Слід також потурбуватись, щоб човен завжди починав подорож у "звичайному" вигляді.</p>
+							</li>
+							<li>
+								<p>Тепер, коли ви спробуєте плисти через дерев'яні бар'єри, ви зможете побачити, що човен розбивається і рухається назад до початку.</p>
+								<figure>
+									<img src="app/img/boat-crash.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Перемога!</h2>
+					<p>Чи можете ви додати ще одне судження <code class="blockcontrol">if</code> до коду човна, щоб гравець вигравав тоді, коли дістається до острову?</p>
+					<p>Коли човен досягає жовтого безлюдного острову, з'являється напис "Ураа!"" і гра припиняється. Ви можете використовувати наступний код:</p>
+					<figure>
+						<img src="app/img/code4.png" alt="screenshot"><figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Звукові ефекти</h2>
+					<p>Ви можете додати до гри звукові ефекти, коли човен розбивається або досягає острова в кінці гри.</p>
+					<p>Можна навіть додати фонову музику.</p>
+				</section>
+				<section id="step-4-making-a-singer" class="level1 activity new-page">
+					<h1>Крок 4: Обмеження часу</h1>
+					<p>Додаймо до гри таймер, щоб гравець спробував дістатися безлюдного острову якомога швидше.</p>
+					<section id="activity-checklist-3" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Додайте нову змінну з ім'ям <code class="blockdata">час</code>. Також можна змінити відображення нової змінної, клікаючи по ній на сцені.</p>
+								<figure>
+									<img src="app/img/boat-variable.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до <b>сцени</b>, щоб таймер лічив час доти, доки човен не дістанеться острову:</p>
+								<figure>
+									<img src="app/img/code5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Готово! Протестуйте вашу гру і перевірте, як швидко ви можете дістатися безлюдного острова!</p>
+								<figure>
+									<img src="app/img/boat-win.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section id="step-4-making-a-singer" class="level1 activity new-page">
+					<h1>Крок 5: Перешкоди і бонуси</h1>
+					<p>Ця гра <i>занадто</i> проста - давайте зробимо її більш цікавою.</p>
+					<section id="activity-checklist-3" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Спочатку додамо деякі активні елементи, які пришвидшать човен. Відредагуйте фонове зображення і додайте кілька білих стрілок.</p>
+								<figure>
+									<img src="app/img/boat-boost.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер ви можете додати код до циклу вашого човна <code class="blockcontrol">завжди</code>, щоб при пропливанні над білими стрілками він переміщався на 2 <b>додаткові</b> кроки.</p>
+								<figure>
+									<img src="app/img/code6.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Можна також додати рухомі ворота, яких човен повинен уникнути. Додайте новий графічний об'єкт з ім'ям "ворота", який виглядає наступним чином:</p>
+								<figure>
+									<img src="app/img/boat-gate.png" height="364" width="481" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Переконайтеся, що колір воріт збігається з кольором інших дерев'яних перешкод.</p>
+							</li>
+							<li>
+								<p>Встановіть центр на спрайті воріт.</p>
+								<figure>
+									<img src="app/img/boat-center.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте код, щоб ворота <code class="blockcontrol">завжди</code> оберталися.</p>
+							</li>
+							<li>
+								<p>Протестуйте гру. Тепер в грі з'явилися ворота, які обертаються і яких треба уникати.</p>
+								<figure>
+									<img src="app/img/boat-gate-test.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Більше перешкод!</h2>
+					<p>Чи можна додати більше перешкод для вашої гри? Нижче наводяться кілька ідей:</p>
+					<ol>
+						<li>
+							<p>До фонового зображення можна додати зелені ділянки болота, які уповільнюють швидкість човна, коли він на них натрапляє. Для цього використовується блок <code class="blockcontrol">чекати</code>:</p>
+								<figure>
+									<img src="app/img/code7.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<figure>
+									<img src="app/img/boat-algae.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+						<li>
+							<p>Ще можна додати рухомі об'єкти, такі як колода або акула!</p>
+								<figure>
+									<img src="app/img/boat-obstacles.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							<p>Ці блоки можуть вам допомогти:</p>
+								<figure>
+									<img src="app/img/code8.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							<p>Якщо ваш новий об'єкт не коричневого кольору, вам потрібно буде додати до човна ще й такий код:</p>
+								<figure>
+									<img src="app/img/code9.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+					</ol>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Більше човнів!</h2>
+					<p>Чи можна перетворити вашу гру в гонку між 2 гравцями?</p>
+					<ol>
+						<li>
+							<p>Продублюйте спрайт човна, і змініть його ім'я на "Гравець 2", також змініть його колір.</p>
+								<figure>
+									<img src="app/img/boat-p2.png" height="248" width="387" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+						<li>
+							<p>Змініть початкову позицію для Гравця 2, змінивши цей код:</p>
+								<figure>
+									<img src="app/img/code10.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+						<li>
+							<p>Видаліть код, що використовується для керування човном мишкою:</p>
+								<figure>
+									<img src="app/img/code11.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+						</li>
+					</ol>
+
+					<p>...і замініть його на код, який буде керувати човном за допомогою клавіш зі стрілками.</p>
+					<p>Для руху вперед використувуйте наступний код:</p>
+								<figure>
+									<img src="app/img/code12.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+					<p>Аналогічно для повороту човна при натисканні лівої і правої клавіші стрілок використовуйте код <code class="blockmotion">поворот</code>.</p>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Більше рівнів!</h2>
+					<p>Чи можете ви створити додаткові фонові зображення, а також дозволити гравцеві вибирати рівні?</p>
+
+
+					<figure>
+						<img src="app/img/code13.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+				
+				</section>
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
