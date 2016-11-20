@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Викидайли</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Викидайли</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>В цьому проекті ви дізнаєтеся, як створити гру-платформер, в якій потрібно буде дістатися кінця рівня ухиляючись від рухомих куль.</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Рух персонажа</h1>
+                    <p>Почнімо зі створення персонажа, який зможе рухатись ліворуч й праворуч, а також підніматися вгору по стовпах.</p>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Спочатку своримо бекграунд для нашої гри. Переконайтеся, що стовпи та платформи будуть різних кольорів, і що в кінці шляху будуть двері (або щось подібне).</p>
+								<figure>
+									<img src="app/img/screen1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте новий спрайт, який буде вашим персонажем. Буде краще, якщо ви виберете спрайт з декількома костюмами, з яких можна зробити анімацію ходіння.</p>
+								<figure>
+									<img src="app/img/screen2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Використовуваймо клавіші зі стрілками для руху персонажа. Коли ми натискаємо стрілку праворуч, ми хочемо, щоб персонаж повертався праворуч, робив декілька кроків і змінював костюм:</p>
+								<figure>
+									<img src="app/img/code1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер самостійно допиши код, щоб персонаж вмів рухатись і ліворуч. Підказка: потрібно додати до цього коду ще один <code class="blockcontrol">якщо</code>.</p>
+							</li>
+							<li>
+								<p>Якщо персонаж перевертається догори ногами, зміни йому тип обертання:</p>
+								<figure>
+									<img src="app/img/code2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Щоб персонаж піднімався по стовпах, використаємо клавішу "стрілка вгору".</p>
+								<figure>
+									<img src="app/img/code3.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+				</section>
+
+				<section id="challenge-make-your-own-animation" class="level2 challenge">
+					<h2>Виклик: Завершення рівня</h2>
+					<p>Ви зможете дописати код, так щоб персонаж щось говорив, <code class="blockcontrol">якщо</code> доходить до дверей?</p>
+					<figure>
+						<img src="app/img/screen3.png" alt="screenshot"><figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Гравітація і стрибки</h1>
+					<p>Зробімо рух нашого персонажа більш реалістичним, додавши гравітацію та навчивши його стрибати.</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li class="">
+								<p>Ви уже, мабуть, помітили, що ваш персонаж може ходити за межами платформ, тобто по повітрю. </p>
+                                <figure>
+                                    <img src="app/img/screen4.png" alt="screenshot"><figcaption>screenshot</figcaption>
+                                </figure>
+							</li>
+							<li>
+								<p>Щоб виправити це, додайте нову змінну "гравітація".</p>
+							</li>
+							<li>
+								<p>Додайте цей код до персонажа:</p>
+								<figure>
+									<img src="app/img/code4.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Гравітація не повинна рухати персонажа крізь платформи:</p>
+								<figure>
+									<img src="app/img/code5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Навчімо його стрибати:</p>
+								<figure>
+									<img src="app/img/code6.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+                                <p>Замість числа "4" вкажіть те, яке вам здається найбільш підходящим.</p>
+							</li>
+							<li>
+								<p>Але якщо затиснути клавішу, він може дострибнути дууууже високо. Тому встановімо обмеження висоті стрибка. Для цього створіть нову змінну "висота стрибка". Та змініть код, який відповідав за стрибки:</p>
+								<figure>
+									<img src="app/img/code7.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							
+						</ul>
+					</section>
+				</section>
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+
+<!--
+				<section id="step-3-making-a-drum" class="level1 activity">
+					<h1>Крок 3: Уникнення куль</h1>
+					<p></p>
+					<section id="activity-checklist-2" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+							</li>
+						</ul>
+					</section>
+				</section>
+-->
+
+				
+				
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
