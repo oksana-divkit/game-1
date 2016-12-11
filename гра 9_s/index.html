@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Гра розуму</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Гра розуму</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>У цьому проекті ви дізнаєтеся, як створити свою гру-вікторину, в якій ви маєте надати якомога більше правильних відповідей за 30 секунд.</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Створення запитань</h1>
+                    <p>Розпочнімо зі створення випадкових запитань для гравця.</p>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим.</p>
+							</li>
+							<li>
+								<p>Виберіть персонаж і фонове зображення для вашої гри. Ви можете вибрати будь-який! Ось приклад:</p>
+								<figure>
+									<img src="app/img/brain-setting.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Створіть 2 нові змінні з іменами <code class="blockdata">число 1</code> і <code class="blockdata">число 2</code>. Ці змінні зберігатимуть 2 числа, які ми пізніше будемо множити одне на одне.</p>
+								<figure>
+									<img src="app/img/screen1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте наступний скрипт до вашого персонажа, який присвоїть нашим змінним <code class="blockoperators">випадкові</code> числа між 2 і 12.</p>
+								<figure>
+									<img src="app/img/code1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Після цього ми просимо гравця дати відповідь і показуєємо йому, помилився він чи відповів вірно.</p>
+								<figure>
+									<img src="app/img/code2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Протестуйте ваш проект, надавши одну правильну і одну неправильну відповідь.</p>
+							</li>
+							<li>
+								<p>Для того щоб ми могли ставити більше одного запитання, внесіть в написаний до цього код блок-цикл <code class="blockcontrol">завжди</code>.</p>
+							</li>
+							<li>
+								<p>На сцені створіть таймер зворотного відліку, використовуючи змінну <code class="blockdata">час</code>. У цьому вам може допомогти урок <a href="http://oksana-shelest.github.io/game-1/%D0%B3%D1%80%D0%B0%202/">"Полювання на відьом"</a>. На 4-му кроці ви можете знайти інструкції як це зробити!</p>
+							</li>
+							<li>
+								<p>Знову протестуйте свій проект - запитання повинні ставитися гравцю доти, доки не закінчиться відлік часу.</p>
+							</li>
+						</ul>
+					</section>
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+				</section>
+
+				<section class="level2 challenge">
+					<h2>Виклик: Зміна вигляду персонажу</h2>
+					<p>Чи можете ви змінювати образи вашого персонажа таким чином, щоб вони змінювалися в залежності від відповіді гравця?</p>
+					<figure>
+						<img src="app/img/screen2.png" alt="screenshot"><figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+
+				<section class="level2 challenge">
+					<h2>Виклик: Додаємо рахунок</h2>
+					<p>Чи можете ви додати у вашу гру рахунок? Як варіант, можна додавати по одному балу за кожну правильну відповідь. Якщо вам хочеться зробити велику капость, можете навіть обнуляти рахунок гравця, якщо він дав невірну відповідь!</p>
+				</section>
+				
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Багаторазові ігри</h1>
+					<p>Додаймо кнопку "Почати гру", таким чином ви зможете заново її починати, не натискаючи кожного разу на зелений прапор.</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li class="">
+								<p>Створіть новий спрайт кнопки "Почати гру". Можете намалювати його самостійно або ж відредагувати один зі спрайтів бібліотеки Scratch.</p>
+                                <figure>
+                                    <img src="app/img/screen3.png" alt="screenshot"><figcaption>screenshot</figcaption>
+                                </figure>
+							</li>
+							<li>
+								<p>Додайте цей код до нової кнопки.</p>
+								<figure>
+                                    <img src="app/img/code3.png" alt="screenshot"><figcaption>screenshot</figcaption>
+                                </figure>
+								<p>Код, написаний вище, показує кнопку, коли ви запускаєте проект. Коли гравець на неї тисне, вона щезає і передає повідомлення, яке запускає гру.</p>
+							</li>
+							<li>
+								<p>Вам потрібно відредагувати код вашого персонажа таким чином, щоб гра починалася тоді, коли ми отримуємо повідомлення <code class="blockevents">старт</code>, а не коли клацають по зеленому прапорцю.</p>
+								<p>Замініть фрагмент коду <code class="blockevents">коли натиснуто прапорець</code> на <code class="blockevents">коли я отримаю старт</code>.</p>
+							
+								<figure>
+									<img src="app/img/code4.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Клацніть по зеленому прапорцю і потім по кнопці "Почати гру", протестуйте як все працює. Ви повинні переконатися в тому, що гра не почнеться, поки кнопку не було натиснуто.</p>
+								
+							</li>
+							<li>
+								<p>Зверніть увагу, що таймер починає свій відлік, коли ви клікнули по зеленому прапорцю, а не після натискання на кнопку.</p>
+								<figure>
+									<img src="app/img/screen4.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Зожете вирішити цю проблему?</p>
+							</li>
+							<li>
+								<p>Перейдіть на сцену, замініть блок <code class="blockcontrol">зупинити все</code> на повідомлення <code class="blockevents">кінець</code>.</p>
+								<figure>
+									<img src="app/img/code5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер ви можете додати код до вашої кнопки, який знову буде показувати її в кінці кожної гри.</p>
+								<figure>
+									<img src="app/img/code6.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+														
+						</ul>
+					</section>
+				</section>
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+
+
+			<!--	<section class="level1 activity">
+					<h1>Крок 3: Уникнення куль</h1>
+					<p>Тепер, коли у вас є персонаж, що вміє рухатись, додаймо кілька м'ячів, які він буде уникати.</p>
+					<section id="activity-checklist-2" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий спрайт м'яча. Ви можете вибрати будь-який м'яч, який вам сподобається.</p>
+								<figure>
+									<img src="app/img/screen5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Змініть розмір м'яча, так щоб персонаж міг через нього перестрибнути. </p>
+								<figure>
+									<img src="app/img/screen6.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+
+					<section class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+					<section class="level2 challenge">
+						<h2>Виклик: Випадкові кулі</h2>
+						<p>Усі м'ячі, які персонаж має уникати,  виглядають однаково і завжди з'являються кожні три секунди. Чи можете ви вдосконалити їх, так щоб вони:</p>
+						<ul>
+							<li>не виглядали однаково?</li>
+							<li>з'являлися після випадкового проміжку часу?</li>
+							<li>були випадкового розміру?</li>
+						</ul>
+						
+						<figure>
+							<img src="app/img/screen9.png" alt="screenshot"><figcaption>screenshot</figcaption>
+						</figure>
+					</section>
+
+					<section class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+					-->
+				
+				</section>
+
+				
+				
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
