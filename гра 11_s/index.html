@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Війни Клонів</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Війни Клонів</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>У цьому проекті ви створите гру, в якій потрібно врятувати Землю від космічних монстрів.</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Створення космічного корабля</h1>
+                    <p>Зробимо корабель, який захищатиме Землю!</p>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий проект у Скретч та видаліть спрайт кота, так щоб проект став пустим.</p>
+							</li>
+							<li>
+								<p>Додайте фон 'stars' (зірки) і спрайт 'Spaceship' (космічний корабель) до вашого проекту. Зменшіть корабель та пересуньте його до низу екрану.</p>
+								<figure>
+									<img src="app/img/screen1.png" height="360" width="480" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте код для переміщення вашого корабля вліво, при натисканні відповідної клавіші зі стрілкою вліво. Вам потрібно буде використовувати такі блоки:</p>
+								<figure>
+									<img src="app/img/code1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте схожий код для переміщення корабля вправо, при натисканні клавіші зі стрілкою вправо.</p>
+							</li>
+							<li>
+								<p>Протестуйте проект. Чи вдається вам керувати космічним кораблем за допомогою кнопок зі стрілками "вліво" і "вправо"?</p>
+							</li>
+						</ul>
+					</section>
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+				</section>
+
+				
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Блискавки</h1>
+					<p>Додамо нашому космічному кораблю здатність стріляти блискавками!</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Додайте спрайт "Lightning" (блискавка) з бібліотеки скретч. Перейдіть в костюми і переверніть блискавку догори ногами. Так, щоб вона била в астероїди, а не в Землю.</p>
+								<figure>
+									<img src="app/img/code2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте наступний код до спрайту корабля для запуску нової блискавки, кожен раз, коли натиснута кнопка "пробіл".</p>
+								<figure>
+									<img src="app/img/code3.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер, коли створено клон об'єкта "блискавка", вона повинна з'явитися в тій позиції, де зараз знаходиться корабель і летіти вгору сцени. Додайте наступний код для спрайту блискавки:</p>
+								<figure>
+									<img src="app/img/code4.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+
+								<p>Примітка: Ми створюємо новий клон блискавки і переносимо його в позицію корабля до того, як показуємо цей клон на екрані. Таким чином, ми уникнемо миготіння блискавки в різних частинах екрану.</p>
+							</li>
+							<li>
+								<p>Протестуйте свою блискавку натиснувши на пробіл.</p>
+							</li>
+						</ul>
+					</section>
+				</section> 
+
+				<section class="level2 challenge">
+					<h2>Виклик: Виправлення неполадок</h2>
+					<p>Що трапиться якщо затримаєте пробіл натиснутим? Чи можете ви використати <code class="blockcontrol">чекати</code>, щоб виправити ситуацію?</p>
+				</section>
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+				
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 3: Літаючі Космічні бегемоти</h1>
+					<p>Додамо безліч літаючих бегемотів, які намагаються знищити ваш корабель.</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Створіть новий спрайт з зображенням 'Hippo1' з бібліотеки Scratch.</p>
+								<figure>
+									<img src="app/img/screen2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Зробіть так, щоб він обертався тільки зліва направо, і додайте наступний код, щоб приховати спрайт, коли гра починається:</p>
+								<figure>
+									<img src="app/img/code5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Створіть нову змінну з назвою <code class="blockdata">speed</code>, тільки для спрайту з бегемотом.</p>
+								<figure>
+									<img src="app/img/screen3.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+
+								<p>Зрозуміти, що ви зробили це правильно можна так: біля назви змінної з'явиться ім'я спрайту:</p>
+								<figure>
+									<img src="app/img/screen4.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Наступний код буде створювати нового Бегемота кожні кілька секунд. Сцена є найкращим місцем для цього коду:</p>
+								<figure>
+									<img src="app/img/code6.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section> 
+				
+				</section>
+
+				
+				
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
