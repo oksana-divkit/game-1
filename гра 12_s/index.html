@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Створи свій власний світ</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Створи свій власний світ</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section id="introduction" class="level1 intro">
+					<h1>Передмова</h1>
+					<p>В цьому проекті Ви дізнаєтесь, як створити свою власну пригодницьку гру жанру "відкритий світ".</p>
+					<div class="scratch-preview">
+						<p><iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe> </p>
+					</div>
+				</section>
+				<section id="step-1-sprites" class="level1 activity">
+					<h1>Крок 1: Кодування персонажа</h1>
+                    <p>Розпочнемо зі створення персонажа, який може переміщуватися вашим світом.</p>
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Завантажте заготовку для гри за посиланням <a href="https://jumpto.cc/world-get">jumpto.cc/world-get</a>, та відкрийте її в своєму Скретч.</p>
+								<figure>
+									<img src="app/img/world-starter.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+
+								<p>Окремо кожен малюнок можна знайти за посиланням <a href="https://www.codeclubprojects.org/en-GB/scratch/create-your-own-world/materials.html">Матеріали гри</a></p>
+							</li>
+							<li>
+								<p>Ми будемо використовувати клавіші зі стрілками для переміщення персонажа. Коли ти натискаєш стрілку вгору, персонаж повинен рухатись вгору, змінюючи свою у-координату. Додай цей код до спрайту "player":</p>
+								<figure>
+									<img src="app/img/code1.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Перевір свого персонажа, натиснувши зелений прапорець, а потім утримуючи стрілку вгору. Чи рухається персонаж вгору?</p>
+								<figure>
+									<img src="app/img/world-up.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Щоб перемістити персонажа вліво, тобі потрібно додати ще один блок до персонажа "якщо", який змінює координату х:</p>
+								<figure>
+									<img src="app/img/code2.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+
+				<section class="level2 challenge">
+					<h2>Виклик: Переміщення у всі чотири сторони</h2>
+					<p>Докодуй свого персонажа, так щоб він зміг рухатися вгору, вниз, вліво і вправо. Використовуй код, який вже маєш, щоб створити інший!</p>
+				</section>
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+						<ul>
+							<li>
+								<p>Перевір свого персонажа знову, і ти побачиш, що він має здатність проходити крізь світло-сірі стіни.</p>
+								<figure>
+									<img src="app/img/world-walls.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Щоб виправити це, тобі потрібно перемістити персонажа, але потім помістити його назад, якщо він торкатиметься світло-сірої стіни. Ось код, який тобі знадобиться:</p>
+								<figure>
+									<img src="app/img/code3.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Перевір цей новий код, рухаючись до стіни - якщо все правильно, ти не зможеш ходити крізь стіни.</p>
+								<figure>
+									<img src="app/img/world-walls-test.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Закінчи скрипт, так щоб персонаж не міг зайти в стіну з будь-якої сторони.</p>
+							</li>
+						</ul>
+				</section>
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+				
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 2: Кодування твого світу</h1>
+					<p>Тепер навчимо персонажа проходити через двері до інших кімнат!</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Ваш проект містить додаткові фони для інших кімнат:</p>
+								<figure>
+									<img src="app/img/world-backdrops.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тобі знадобиться нова змінна "кімната" (для усіх спрайтів), щоб відмічати, в якій кімнаті знаходиться персонаж.</p>
+								<figure>
+									<img src="app/img/world-room.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Коли персонаж торкається оранжевих дверей в першій кімнаті, повинен з'явитися інший фон, а персонаж повинен переміститися до лівого боку сцени. Ось код, який тобі знадобиться, - його потрібно додати до системи ходіння персонажа в блок "якщо":</p>
+								<figure>
+									<img src="app/img/code4.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>А цей код потрібно додати на початок гри, щоб задати стартові позиції:</p>
+								<figure>
+									<img src="app/img/code5.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Натисни зелений прапорець та проведи свого персонажа через оранжеві двері. Чи перейшов твій гперсонаж на наступний рівень? Чи змінилася змінна "кімната"?</p>
+								<figure>
+									<img src="app/img/world-room-test.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section> 
+
+				<section class="level2 challenge">
+					<h2>Виклик: Перехід до попередньої кімнати</h2>
+					<p>Чи можеш ти змусити свого персонажа перейти до попередньої кімнати, коли він торкається жовтих дверей? Пам'ятай, що цей код буде дуже схожим до коду, який ти вже додав для переміщення до наступної кімнати.</p>
+				</section>
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+				
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 3: Знаки</h1>
+					<p>Додамо знаки до твого світу, щоб персонаж у своїй подорожі міг отримувати підказки.</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Твій проект включає в себе спрайт вітального знаку (welcome sign):</p>
+								<figure>
+									<img src="app/img/world-sign.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+				</section> 
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+				<!-- <section class="level2 challenge">
+					<h2>Виклик: Життя та Рахунок</h2>
+					<p>Чи можете ви додати в гру такі речі, як <code class="blockdata">Життя</code>, <code class="blockdata">Рахунок</code> та навіть <code class="blockdata">Найвищий бал</code>? Ви можете користуватись проектом "Ловець точок", коли буде потрібна допомога.</p>
+				</section>
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+
+				
+				<section id="step-2-the-stage" class="level1 activity">
+					<h1>Крок 4: Фруктові кажани!</h1>
+					<p>Все більше в космосі з'являється загадкових істот. З бегемотами ми так-сяк розібралися, тепер нехай прилетить кажан, який кидатиметься в наш корабель апельсинами.</p>
+					<section id="activity-checklist-1" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>По-перше, потрібно зробити новий спрайт кажана, який <code class="blockcontrol">завжди</code> буде <code class="blockmotion">рухатися (переміщатися)</code> у верхній частині сцени. Не забудьте перевірити ваш код.</p>
+								<figure>
+									<img src="app/img/screen9.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Для спрайту кажана, як ви могли помітити, вже є 2 костюма:</p>
+								<figure>
+									<img src="app/img/screen10.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Використовуйте блок <code class="blocklooks">наступний образ</code>, щоб реалістично оживити мишку в польоті.</p>
+							</li>
+							<li>
+								<p>Створіть новий спрайт з зображенням "Апельсин" з бібліотеки Scratch</p>
+								<figure>
+									<img src="app/img/screen11.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Додайте цей код до кажана, так щоб він створював нові апельсини кожні кілька секунд.</p>
+								<figure>
+									<img src="app/img/code10.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер натиснемо на спрайт апельсина і додамо код, щоб клон з'являвся в позиції, де в даний момент знаходиться кажан і летів вниз сцени, в напрямку корабля:</p>
+								<figure>
+									<img src="app/img/code11.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Також нам треба буде трохи модифікувати код для спрайту корабля, щоб стикаючись з апельсином, він вибухав:</p>
+								<figure>
+									<img src="app/img/code12.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Перевірте свою гру. Що станеться, якщо корабель зіткнеться з апельсином?</p>
+							</li>
+						</ul>
+					</section>
+				</section> 
+
+					<section id="save-your-project" class="level2 save">
+						<h2>Збережіть свій проект</h2>
+					</section>
+				
+				</section> -->
+
+				
+				
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
