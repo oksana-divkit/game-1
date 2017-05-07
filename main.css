@@ -22,8 +22,15 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
 }
 
+h1 {
+	color: #0d679a;
+}
+
 h2 {
     margin-top: 1.3em;
+}
+h4 {
+	margin-bottom: .3em;
 }
 
 a {
@@ -32,6 +39,10 @@ a {
 
 b, strong {
     font-weight: 600;
+}
+
+ul {
+	margin-top: 0;
 }
 
 samp {

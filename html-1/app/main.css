@@ -1,0 +1,403 @@
+* {
+	/*padding: 0;
+	margin: 0;*/
+	box-sizing: border-box;
+}
+
+ol {
+	margin: 0 0 30px;
+}
+
+body {
+	margin: 0;
+	    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5em;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.pdf-background {
+	background-color: #f3f4f7;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+.wrapper {
+	padding: 60px 0 0;
+	color: #333;
+}
+
+.header {
+	margin: 0 0 30px;
+	padding: 48px 200px 47px 165px;
+	position: relative;
+	background: #b9e5fa;
+}
+h1, article h2, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.level {
+	position: absolute;
+	top: -11px;
+	left: 22px;
+	width: 128px;
+	height: 160px;
+	padding: 19px 0 0;
+	background: #3477d1;
+	text-align: center;
+	color: #fff;
+	border-radius: 22px;
+	font: 32px/1 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.level__num {
+	display: block;
+	font-size: 96px;
+}
+
+.game-name {
+	font-size: 37px;
+}
+
+.logo {
+	width: 178px;
+	position: absolute;
+	top: 11px;
+	right: 15px;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+.lesson {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #339933;
+    color: white;
+    text-align: center;
+    background-image: url("../app/img/large_banner.png");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.lesson h1, .lesson article h2, article .lesson h2 {
+    font-size: 70px;
+    font-size: 4.375rem;
+    line-height: normal;
+}
+.lesson h1 {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+@media (min-width: 768px){
+	.container {
+	    width: 750px;
+	}
+}
+
+@media (min-width: 992px){
+	.container {
+	    width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 1170px;
+	}
+}
+
+article {
+    background-color: white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2.500em;
+    padding-bottom: 2.500em;
+    margin-top: 1.875em;
+    margin-bottom: 3.125em;
+    -webkit-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    -khtml-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    -ms-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    -o-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.center-block, article img, .lesson-steps .challenge pre, .panel-course, .panel-partner, .panel-lesson {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lesson-steps {
+    max-width: 780px;
+}
+article h1, article h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+
+.lesson-steps h1, .lesson-steps article h2, article .lesson-steps h2 {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+article p {
+    line-height: 24px;
+    padding-bottom: 0.625em;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.scratch-preview {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.scratch-preview iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.scratch-preview img {
+    display: none;
+}
+
+
+.lesson-steps .check h2 {
+    background: url("../app/img/check.png") left center no-repeat;
+    background-size: 1em auto;
+    color: #f5a200;
+    padding-left: 1.2em;
+}
+
+
+.lesson-steps ul {
+    margin-left: 1.5em;
+    margin-top: 20px;
+}
+
+.lesson-steps ul>li {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.lesson-steps ul>li:before {
+    background: white;
+    border: 2px solid #339933;
+    border-radius: 0.25em;
+    content: ' ';
+    cursor: pointer;
+    display: block;
+    left: -50px;
+    position: absolute;
+    top: 2px;
+    height: 1.313em;
+    width: 1.313em;
+}figure {
+    margin: 0;
+}
+.lesson-steps ul>li img {
+    border: none;
+    max-width: 100%;
+}
+article img {
+    padding: 1.875em;
+    max-width: 100%;
+}
+
+figcaption {
+    display: none;
+}
+
+article a {
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+a {
+	text-decoration: none;
+    color: #339933;
+    font-weight: 700;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+.lesson-steps ul>li.activity-done:before {
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\a         	 width="10px" height="11px" viewBox="0 0 10 11" enable-background="new 0 0 10 11" xml:space="preserve">\a         <g>\a         	<g>\a         		<path fill="%23339933" d="M3.7,11c-0.3,0-0.6-0.2-0.8-0.4L0.2,6.9C-0.1,6.4,0,5.7,0.4,5.3C0.9,5,1.5,5.1,1.9,5.5L3.6,8l4.4-7.5\a         			C8.4,0,9-0.2,9.5,0.2c0.5,0.3,0.6,1,0.3,1.5l-5.2,8.8C4.4,10.8,4.1,11,3.7,11C3.8,11,3.7,11,3.7,11z"/>\a         	</g>\a         </g>\a         </svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lesson-steps ul>li.activity-done p {
+    font-style: italic;
+    text-decoration: line-through;
+}
+.save h2 {
+    height: 72px;
+    line-height: 72px;
+    background: inherit;
+    border: 1px solid #e0e0e0;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #5290d2;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.lesson-steps .challenge {
+    background-color: #5290d2;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 50px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 50px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.lesson-steps .challenge h2 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.lesson-steps .challenge ul {
+    margin-left: 0;
+}
+.lesson-steps .challenge li {
+    list-style: none;
+    position: relative;
+}
+.lesson-steps .challenge li:before {
+    background: white;
+    border: 2px solid #3477d1;
+    left: -40px;
+}
+.lesson-steps .challenge a {
+    color: #fff;
+    text-decoration: underline;
+}
+.center-block, article img, .lesson-steps .challenge pre, .panel-course, .panel-partner, .panel-lesson {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+code.blockmotion, code.blocklooks, code.blocksound, code.blockpen, code.blockdata, code.blockevents, code.blockcontrol, code.blocksensing, code.blockoperators, code.blockmoreblocks {
+    color: #fff;
+    white-space: nowrap;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+code.mark {
+    white-space: nowrap;
+    background: rgb(215, 215, 215);
+}
+code.blockevents {
+    background: #D38117;
+}
+code.blockcontrol {
+    background: #E9AA00;
+}
+code.blockmotion {
+    background: #505FD7;
+}
+code.blocklooks {
+    background: #9B33D9;
+}
+code.blocksensing {
+    background: rgb(0, 163, 230);
+}
+code.blockoperators {
+    background: rgb(0, 193, 20);
+}
+code.blockdata {
+    background: rgb(255, 117, 0);
+}
+code {
+    background: #d7d7d7;
+    border-radius: 0.25em;
+    color: #111;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.8em;
+    padding: 0 0.5em;
+}
+.lesson-steps .challenge li.activity-done:before {
+    background-color: white !important;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\a              width="10px" height="11px" viewBox="0 0 10 11" enable-background="new 0 0 10 11" xml:space="preserve">\a              <g><g><path fill="%233477d1" d="M3.7,11c-0.3,0-0.6-0.2-0.8-0.4L0.2,6.9C-0.1,6.4,0,5.7,0.4,5.3C0.9,5,1.5,5.1,1.9,5.5L3.6,8l4.4-7.5 C8.4,0,9-0.2,9.5,0.2c0.5,0.3,0.6,1,0.3,1.5l-5.2,8.8C4.4,10.8,4.1,11,3.7,11C3.8,11,3.7,11,3.7,11z"/>\a              </g></g></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+pre {
+    display: flex;
+    padding: 9px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+code {
+    background: #d7d7d7;
+    border-radius: 0.25em;
+    color: #111;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.8em;
+    padding: 0 0.5em;
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+article pre code {
+    color: #666666;
+}
