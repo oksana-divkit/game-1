@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Розшукується!</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Розшукується!</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section class="intro">
+					<h1>Передмова</h1>
+					<p>У цьому проекті ви зможете створити свій плакат або оголошення.</p>
+					<figure>
+						<img src="app/img/wanted-final.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+
+				<section class="activity">
+					<h1>Крок1: Стилізація вашого плакату</h1>
+                    <p>Почнімо з редагування CSS коду для плакату.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Відкрий цю чернетку: <a href="http://jumpto.cc/web-wanted" target="_blank">jumpto.cc/web-wanted</a>.</p>
+								<figure>
+									<img src="app/img/wanted-starter.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Натисни на вкладку "style.css". Ти помітиш, що там уже є CSS властивості для <code>div</code> , який стилізує різні частинки плакату.</p>
+								<pre>
+									<code>div {
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid black;
+    width: 300px;
+}</code>
+								</pre>
+							</li>
+							<li>
+								<p>Почнімо з властивості <code>text-align:</code></p>
+								<pre>
+									<code>text-align: center;</code>
+								</pre>
+								<p>Що станеться, коли ти зміниш слово <code>center</code> на <code>left</code> чи <code>right</code>?</p>
+							</li>
+							<li>
+								<p>Як щодо властивості <code>border</code> (рамка)?</p>
+								<pre>
+									<code>border: 2px solid black;</code>
+								</pre>
+								<p>Код <code>2px</code> означає 2 пікселі. Що станеться коли ти зміниш <code>2px solid black</code> на <code>4px dotted red</code>?</p>
+							</li>
+							<li>
+								<p>Змініть <code>width</code> (ширина) на <code>400px</code>. Що станеться з плакатом?</p>
+							</li>
+							<li>
+								<p>Додаймо трішки CSS щоб змінити колір фону плаката. На 5-ому рядку коду створи новий пустий рядок:</p>
+								<figure>
+									<img src="app/img/wanted-newline.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Та напиши там:</p>
+								<pre>
+									<code>background: yellow;</code>
+								</pre>
+								<p>Тепер фон <code>&lt;div&gt;</code> жовтий.</p>
+								<figure>
+									<img src="app/img/wanted-background.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="challenge">
+					<h2>Завдання: Удосконалення плакату</h2>
+					<p>Додай наступні CSS властивості до стилів твого <code>div</code>:</p>
+					<pre><code>border-radius: 40px;</code></pre>
+
+					<p>Що робить ця властивість? Що станеться, якщо ти зміниш число "40"?</p>
+				</section>
+
+				<section class="activity">
+					<h1>Крок 2: Стилізація зображень</h1>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Поки що для тегу <code>&lt;img&gt;</code> немає жодних CSS властивостей, отож додаймо кілька!</p>
+								<p>Спершу додай наступний код в кінець CSS файлу:</p>
+								<pre>
+									<code>img {
+
+}</code>
+								</pre>
+								<figure>
+									<img src="app/img/wanted-img-css.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер ми можемо додавати CSS властивості для зображенння між фігурними дужками <code>{</code> та <code>}</code>.</p>
+								<p>Наприклад, додай цей код у фігурні дужки, щоб встановити ширину зображення:</p>
+								<pre>
+									<code>width: 100px;</code>
+								</pre>
+								<p>Ти побачиш, що розмір зображення змінився, тож тепер його ширина 100 пікселів.</p>
+								<figure>
+									<img src="app/img/wanted-img-width.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Ти також можеш додати рамку навколо зображення за допомогою цього коду:</p>
+								<pre>
+									<code>border: 1px solid black;</code>
+								</pre>
+							</li>
+							<li>
+								<p>Ви помітили, що між зображенням і межею не дуже багато вільного простору?</p>
+								<figure>
+									<img src="app/img/wanted-img-border.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Це можна виправити, додавши відступ навколо зображення:</p>
+								<pre>
+									<code>padding: 10px;</code>
+								</pre>
+								<p>Відступ - це простір між вмістом (у цьому випадку зображенням) і його межею.</p>
+								<figure>
+									<img src="app/img/wanted-img-padding.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Що, на твою думку, станеться, якщо змінити відступ на 50px?</p>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="challenge">
+					<h2>Виклик: Вдосконалення зображення</h2>
+					<p>Можеш задати своєму зображенню колір заднього фону? Чи округлі краї?</p>
+
+					<p>Більше назв CSS кольорів можна знайти за посиланням <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a></p>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+				<section class="activity">
+					<h1>Крок 3: Стилізація заголовків</h1>
+                    <p>Давай покращимо стиль заголовка <code>&lt;h1&gt;</code>.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Додай наступний код під CSS код твого зображення:</p>
+
+								<pre>
+									<code>h1 {
+
+}</code>
+								</pre>
+								<p>Сюди ти додаватимеш CSS властивості для твого основного заголовка <code>&lt;h1&gt;</code>.</p>
+							</li>
+							<li>
+								<p>Щоб змінити шрифт твоїх заголовків <code>&lt;h1&gt;</code>, додай наступний код у фігурні дужки:</p>
+
+								<pre>
+									<code>font-family: Impact;</code>
+								</pre>
+							</li>
+							<li>
+								<p>Ти також можеш змінити розмір заголовка:</p>
+
+								<pre>
+									<code>font-size: 50pt;</code>
+								</pre>
+							</li>
+							<li>
+								<p>Чи помітили ви великий простір між заголовком <code>&lt;h1&gt;</code> та всім, що знаходиться навколо нього?</p>
+
+								<figure>
+									<img src="app/img/wanted-h1-margin.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Це через поля навколо заголовку. Поле - це простір між елементом (в цьому випадку заголовком) та всім, що знаходиться навколо нього.</p>
+								<p>За допомогою цього коду, ти можеш зробити поля меншими:</p>
+
+								<pre>
+									<code>margin: 10px;</code>
+								</pre>
+
+								<figure>
+									<img src="app/img/wanted-h1-margin-small.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Також ти можеш підкреслити свій заголовок:</p>
+
+								<pre>
+									<code>text-decoration: underline;</code>
+								</pre>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="challenge">
+					<h2>Виклик: Зроби свій плакат дивовижним!</h2>
+					<p>Додай більше CSS коду, щоб стилізувати свої параграфи (p) та заголовки (h1, h3).</p>
+
+					<figure>
+						<img src="app/img/wanted-final (1).png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+
+					<p>Ось список різних CSS властивостей, які ти можеш використати:</p>
+
+					<pre><code>color: black;
+background: white;
+font-family: Arial / Comic Sans MS / Courier / Impact / Tahoma;
+font-size: 12pt;
+font-weight: bold;
+text-decoration: underline overline line-through;
+margin: 10px;
+padding: 10px;
+width: 100px;
+height: 100px;</code>
+					</pre>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+				<section class="challenge">
+					<h2>Виклик: Зроби рекламу події!</h2>
+					<p>Чи можеш ти зробити плакат заходу, що відбувається у твоїй школі? Це могла б бути гра, спортивна подія, або навіть плакат, що рекламує твій CodeClub!</p>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+				
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
