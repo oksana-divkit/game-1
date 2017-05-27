@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8" />
+	<title>Рецепт</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+
+	<link rel="stylesheet" href="app/main.css" />
+
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+		<div class="logo">
+			<img src="app/img/logo.svg" />
+		</div>
+
+
+	<header class="lesson">
+  
+	    <div class="container">
+	      
+
+	    </div>
+	    <div class="container">
+	      <h1>Рецепт</h1>
+	      
+	        <div>
+	        
+	      </div>
+	    </div>
+	  </header>
+
+
+<section class=" pdf-background">
+	<div class="container">
+		<article>
+			<main class="lesson-steps center-block" role="main">
+				<div class="icon-sample pull-right">
+				</div>
+				<section class="intro">
+					<h1>Передмова</h1>
+					<p>В ході цього проекту ви навчитесь створювати веб-сторінку для свого улюбленого рецепту.</p>
+					<figure>
+						<img src="app/img/recipe-final.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+
+				<section class="activity">
+					<h1>Крок1: Оберіть рецепт</h1>
+                    <p>Перед написанням коду вам слід обрати рецепт.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Подумайте, яким рецептом ви би хотіли поділитись зі своїми друзями. Це би міг бути:</p>
+								<ol>
+									<li>Рецепт з Інтернету;</li>
+									<li>Рецепт вашої улюбленої страви;</li>
+									<li>Якийсь власний рецепт!</li>
+								</ol>
+							</li>
+						</ul>
+
+						<p>Приклад, що ви побачите у цьому проекті, буде рецептом бананового коктейлю. Якщо не вдасться знайти власний, можете взяти його.</p>
+					</section>
+
+				</section>
+
+				<section class="activity">
+					<h1>Крок 2: Інгредієнти</h1>
+					<p>Давайте складемо список інгредієнтів, необхідних для вашого рецепту.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Відкрийте цю чернетку-шаблон: <a href="http://jumpto.cc/trinket-template" target="_blank">jumpto.cc/trinket-template</a>.</p>
+								<figure>
+									<img src="app/img/recipe-starter.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Для створення списку інгредієнтів ви побудуєте <b>ненумерований список</b> за допомогою тегу <code>&lt;ul&gt;</code>. Перейдіть до 8-го рядка шаблону і додайте цей код HTML, замінивши текст всередині тегу <code>&lt;h1&gt;</code> назвою власного рецепту:</p>
+								<pre>
+									<code>&lt;h1&gt;Banana Milkshake&lt;/h1&gt;
+
+&lt;h3&gt;Інгридієнти:&lt;/h3&gt;
+
+&lt;ul&gt;
+
+&lt;/ul&gt;</code>
+								</pre>
+							</li>
+							<li>
+								<p>Відкрийте свою веб-сторінку і побачите два заголовки.</p>
+								<figure>
+									<img src="app/img/recipe-headings.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Та списку поки нема, бо ви ще не додали до нього жодного елементу!</p>
+							</li>
+							<li>
+								<p>Наступний крок — додати елементи до свого списку за допомогою тегу <code>&lt;li&gt;</code>. Вставте цей код в межах тегу <code>&lt;ul&gt;</code>:</p>
+								<pre>
+									<code>&lt;li&gt;1 banana&lt;/li&gt;</code>
+								</pre>
+
+								<figure>
+									<img src="app/img/recipe-ul.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Оскільки ваш список ненумерований, у ньому нема номерів навпроти елементів, лише маркери.</p>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="challenge">
+					<h2>Завдання: Більше інгредієнтів</h2>
+					<p>Можете додати більше інгредієнтів до <b>свого</b> рецепту?</p>
+
+					<p>Ваша веб-сторінка має виглядати якось так:</p>
+
+					<figure>
+						<img src="app/img/recipe-more-ingredients.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+				<section class="activity">
+					<h1>Крок 3: Спосіб приготування</h1>
+                    <p>Тепер пояснимо, як же готувати наші страви.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Ви зробите ще один список для опису рецепта. Але тепер це буде <b>нумерований список</b>, створений за допомогою тегу <code>&lt;ol&gt;</code>.</p>
+
+								<p>Нумерований список слід застосовувати, наприклад, коли важливий порядок виконання дій.</p>
+								<p>Вставте цей код під своїм списком інгредієнтів, але так, щоб він був в межах тегу <code>&lt;body&gt;</code>:</p>
+								<pre>
+									<code>&lt;h1&gt;Banana Milkshake&lt;/h1&gt;
+
+&lt;h3&gt;Спосіб приготування:&lt;/h3&gt;
+
+&lt;ol&gt;
+
+&lt;/ol&gt;</code>
+								</pre>
+
+								<figure>
+									<img src="app/img/recipe-method.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Тепер вам лише треба додати елементи до нового нумерованого списку:</p>
+								<pre>
+									<code>&lt;li&gt;Очистити банан і додати в блендер&lt;/li&gt;</code>
+								</pre>
+								<figure>
+									<img src="app/img/recipe-ol.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Зверніть увагу, що елементи списку нумеруються автоматично!</p>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="challenge">
+					<h2>Завдання: Більше кроків</h2>
+					<p>Можете додати усі кроки для приготування <b>вашої</b> страви?</p>
+
+					<figure>
+						<img src="app/img/recipe-more-method.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+				<section class="activity">
+					<h1>Крок 4: Кольори!</h1>
+                    <p>Давайте додамо трохи кольору до веб-сторінки вашого рецепту.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Ви вже знаєте, як додавати на сторінку кольоровий текст. Додайте цей код до свого файлу style.css, щоб пофарбувати весь текст у <b>body</b> в синій:</p>
+								<pre>
+									<code>body {
+    color: blue;
+}</code>
+								</pre>
+								<figure>
+									<img src="app/img/recipe-blue.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Ваш веб-переглядач знає такі кольори, як <code>blue</code> (синій), <code>yellow</code> (жовтий) та навіть <code>lightgreen</code> (салатовий). Та чи знаєте ви, що насправді він знає назви більше 500 різних кольорів?</p>
+								<p>Ось список назв усіх кольорів, якими ви можете скористатись: <a href="http://jumpto.cc/web-colours" target="_blank">jumpto.cc/web-colours</a>. Серед них є такі кольори, як <code>tomato</code> (томатний), <code>firebrick</code> (цегловий) та <code>peachpuff</code> (персиковий).</p>
+								<p>Змініть колір тексту з <code>blue</code> (синього) на <code>tomato</code> (томатний).</p>
+								<figure>
+									<img src="app/img/recipe-tomato.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Ваш веб-переглядач знає назви 140 кольорів. Однак насправді він розрізняє більше 16 мільйонів кольорів за їх <b>кодовими позначеннями</b>!</p>
+								<p>Як ви, мабуть, знаєте, будь-який колір можна створити шляхом поєднання основних кольорів: червоного, зеленого та синього. Щоб пояснити веб-переглядачу, який колір показувати, вам лишень треба вказати, наскільки насиченим має бути кожен з основних кольорів.</p>
+								<p>Потрібна насиченість червоного, зеленого та синього вказується числом від <code>0</code> до <code>255</code>. rgb — абревіатура з перших букв англійських назв червоного (<b>r</b>ed), зеленого (<b>g</b>reen) та синього (<b>b</b>lue) кольорів.</p>
+								<figure>
+									<img src="app/img/recipe-rgb-img.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+
+								<p>Додайте цей код до CSS для тіла веб-сторінки, щоб зробити тло світло-жовтим:</p>
+								<pre>
+									<code>background: rgb(250,250,210);</code>
+								</pre>
+								<figure>
+									<img src="app/img/recipe-rgb.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>Пояснити веб-переглядачу, який колір показувати, також можна за допомогою <b>шістнадцяткового коду</b> (скорочено англійською <b>"hex code"</b>). Він працює так само, як і згаданий вище код <code>rgb()</code>, тільки шістнадцяткові коди завжди мають починатись <code>#</code>, а для позначення насиченості червоного, зеленого та синього в них використовуються шістнадцяткові "цифри" від <code>00</code> до <code>ff</code>.</p>
+								<figure>
+									<img src="app/img/recipe-hex-img.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Замініть код <code>rgb()</code> у своїх CSS цим шістнадцятковим кодом:</p>
+								<pre>
+									<code>background: background: #fafad2;</code>
+								</pre>
+								<figure>
+									<img src="app/img/recipe-hex.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Ви маєте побачити таке ж світло-жовте тло, як і раніше!</p>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+
+
+				<section class="activity">
+					<h1>Крок 5: Завершальні штрихи</h1>
+                    <p>Давайте додамо трохи більше HTML та CSS, щоб покращити вашу веб-сторінку.</p>
+
+					<section id="activity-checklist" class="level2 check">
+						<h2>Завдання для виконання</h2>
+						<ul>
+							<li>
+								<p>Можете додати горизонтальну лінію в кінці свого рецепту за допомогою тегу <code>&lt;hr&gt;</code>.</p>
+								<pre>
+									<code>&lt;hr&gt;</code>
+								</pre>
+
+								<figure>
+									<img src="app/img/recipe-hr.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+								<p>Зверніть увагу, що цей тег не має закриваючого тегу. Як і тег <code>&lt;img&gt;</code>.</p>
+							</li>
+							<li>
+								<p>Лінія, яку ви щойно додали, не поєднується з оформленням решти вашої веб-сторінки. Давайте виправимо це, додавши трохи коду CSS:</p>
+								<pre>
+									<code>hr {
+    height: 2px;
+    border: none;
+    background-color: tomato;
+}</code>
+								</pre>
+
+								<figure>
+									<img src="app/img/recipe-hr-css.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+							<li>
+								<p>За допомогою цього коду CSS ви навіть можете змінити вигляд маркерів списку:</p>
+								<pre>
+									<code>ul {
+    list-style-type: square;
+}</code>
+								</pre>
+
+								<figure>
+									<img src="app/img/recipe-ul-css.png" alt="screenshot">
+									<figcaption>screenshot</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section class="challenge">
+					<h2>Завдання: Більше кольорів!</h2>
+					<p>Змініть кольори у своєму коді, використовуючи їх назви, позначення <code>rgb()</code> та шістнадцяткові коди. Тут <a href="http://jumpto.cc/web-colours" target="_blank">jumpto.cc/web-colours</a> є список купи кольорів.</p>
+
+					<p>Ось кілька прикладів:</p>
+					<ul>
+						<li>
+							<p>Червоний можна записати як:</p>
+							<p>
+								- <code>red</code> (червоний, це ж очевидно!)<br />
+								- <code>rgb(255,0,0)</code> (купа червоного і ні краплі зеленого та синього)<br />
+								- <code>#ff0000</code>
+							</p>
+						</li>
+						<li>
+							<p>Оливковий можна записати як:</p>
+							<p>
+								- <code>olive</code> (оливковий)<br />
+								- <code>rgb(128, 128, 0)</code> (трохи червоного та зеленого, синього не треба)<br />
+								- <code>#808000</code>
+							</p>
+						</li>
+					</ul>
+
+					<p>Постарайтесь зробити так, щоб кольори відповідали вашому рецепту!</p>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+				<section class="challenge">
+					<h2>Завдання: Відгуки</h2>
+					<p>Попросіть кількох друзів залишити відгук про ваш рецепт. Для цього вам доведеться створити ще один список.</p>
+					<figure>
+						<img src="app/img/recipe-reviews.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+
+				<section class="challenge">
+					<h2>Завдання: Більше оформлення</h2>
+					<p>Можете додати зображення на свою веб-сторінку? А змінити шрифт? Ось як вона могла б виглядати:</p>
+					<figure>
+						<img src="app/img/recipe-final.png" alt="screenshot">
+						<figcaption>screenshot</figcaption>
+					</figure>
+
+					<p>Ось трохи допоміжного коду:</p>
+					<pre>
+						<code>font-family: Arial / Comic Sans MS / Courier / Impact / Tahoma;
+font-size: 12pt;
+font-weight: bold;
+
+&lt;img src="тут-посиланна-на-картинку"&gt;</code>
+					</pre>
+
+				</section>
+
+				<section class="save">
+					<h2>Збережіть свій проект</h2>
+				</section>
+				
+			</main>
+		</article>
+	</div>
+</section>
+	
+</div><!-- .wrapper -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+	$('.lesson-steps li').click(function() {
+		$(this).toggleClass('activity-done');
+	});
+});
+</script>
+
+</body>
+</html>
